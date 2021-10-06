@@ -2774,6 +2774,320 @@ input {
 
 /* end workWithus style */
 
+/* amozesh page start */
+
+.slides > figure > img {
+	width: 100%;
+}
+
+.parent-form {
+	display: flex;
+
+	position: absolute;
+	z-index: 999;
+	width: 100%;
+	height: 214px;
+	justify-content: center;
+	align-items: center;
+}
+.parent-form > form {
+	display: flex;
+}
+.parent-form > form > input {
+	box-shadow: 0px 2px 15px 1px #00b8d4;
+
+	height: 30px;
+	border: none;
+	outline: none;
+	display: flex;
+	border-radius: 0px 15px 15px 0px;
+}
+
+.parent-form > form > input::placeholder {
+	font-weight: bold;
+	font-size: 0.7rem;
+	text-align: center;
+}
+.parent-form > form > div {
+	background: skyblue;
+	height: 30px;
+	width: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0px 0px 15px 0px;
+	color: #fff;
+	transform: translate(15px, 0px);
+}
+
+.slides {
+	position: relative;
+}
+.btn-arrow-amozesh-slides {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 9999;
+}
+
+.btn-arrow-amozesh-slides > div {
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+	margin: 15px;
+	background: rgba(189, 189, 189, 0.63);
+	width: 30px;
+	text-align: center;
+}
+
+.title-home_learning {
+	width: 90%;
+	padding: 5px;
+	background: #e5e5e5;
+	border-radius: 15px 0px 0px 15px;
+}
+
+.title-home_learning > div > a {
+	font-size: 0.8rem;
+	font-weight: bold;
+	color: #828282;
+}
+
+.title-home_learning > div span {
+	color: #828282;
+	font-weight: bold;
+}
+
+.title > p {
+	color: #757171;
+
+	font-weight: bold;
+	font-size: 15px;
+	margin: 15px 15px 0px 0px;
+}
+
+/* swiper start */
+
+.swiper {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	/* Center slide text vertically */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0px 0px 15px 15px;
+	box-shadow: 0px 9px 14px -4px rgba(0, 0, 0, 0.61);
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.section-swiper {
+	margin-top: 20px;
+}
+.swiper-slide {
+	display: flex;
+	flex-direction: column;
+}
+.one-text-swiper-slide-amozesh {
+	background: #00b8d4;
+	color: #ffff;
+	font-size: 1rem;
+	width: 100%;
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+}
+
+.two-text-swiper-slide-amozesh {
+	display: flex;
+	width: 100%;
+	font-size: 1rem;
+	align-items: center;
+	justify-content: space-around;
+	padding: 15px;
+	border-radius: 0px 0px 15px 15px;
+	background: #ffffff;
+	cursor: pointer;
+}
+.swiper-pagination {
+	position: static !important;
+	margin-top: 20px;
+}
+
+/* js class toggel heart icon start */
+.TEST .fa-heart::before {
+	color: red;
+}
+/* js class toggel heart icon end */
+/* swiper end  */
+
+.parent-boxes {
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+}
+.wrapper-box-article-amozesh {
+	display: flex;
+	justify-content: space-evenly;
+}
+.wrapper-box-article-amozesh > div {
+	background: rgb(255, 253, 253);
+	margin: 5px;
+	border-bottom: 1px solid #c4c4c4;
+}
+.wrapper-box-article-amozesh:nth-of-type(3) div {
+	border: none;
+}
+.wrapper-box-article-amozesh > div > p {
+	font-size: 0.7rem;
+	font-weight: bold;
+	margin-top: 15px;
+	padding: 5px;
+}
+.wrapper-box-article-amozesh figure img {
+	width: 100%;
+}
+.wrapper-box-article-amozesh > div > h3 {
+	font-size: 0.9rem;
+}
+.wrapper-box-article-amozesh > div > p,
+h3 {
+	text-align: center;
+	color: #828282;
+}
+
+.bishtar {
+	text-align: left;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.bishtar > a,
+.bishtar > i {
+	margin-left: 5px;
+	color: #00b8d4;
+	font-weight: bold;
+	margin-left: 15px;
+}
+.parent-amozesh-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	border-bottom: 1px solid #c4c4c4;
+}
+.amozesh-btn {
+	overflow: hidden;
+	border-radius: 15px;
+	text-align: center;
+	padding: 10px;
+	width: 150px;
+	position: relative;
+	background: #00b8d4;
+	border: 2px solid rgb(109, 187, 231);
+}
+.amozesh-btn span {
+	position: relative;
+	z-index: 1;
+}
+.amozesh-btn::before {
+	content: '';
+	background: rgba(230, 62, 95, 0.794);
+	border-radius: 50%;
+	position: absolute;
+	top: var(--y);
+	left: var(--x);
+	transform: translate(-50%, -50%);
+	width: 0px;
+	height: 0px;
+	transition: width 0.5s, height 0.5s;
+}
+
+.showcircel.amozesh-btn::before {
+	width: 300px;
+	height: 300px;
+	display: none;
+}
+
+.amozesh-btn:hover::before {
+	/* width: 100px;
+	height: 100px; */
+
+	width: 300px;
+	height: 300px;
+}
+.amozesh-btn a {
+	font-weight: bold;
+	color: #fff;
+}
+.title-comments {
+	margin-top: 35px;
+}
+
+/* section comments start*/
+.comments {
+	margin-top: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.row {
+	background: #e5e5e5;
+	width: 100%;
+	margin-top: 15px;
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.row img {
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	object-fit: cover;
+	margin: 15px;
+	width: 100%;
+	max-width: 80px;
+	height: 100%;
+	max-height: 80px;
+}
+.cm-btn {
+	border: none;
+}
+.cm-btn span {
+	font-size: 0.8rem;
+	font-weight: bold;
+	color: #ffff;
+	font-family: vazirL;
+}
+
+.text-comments {
+	width: 100%;
+	padding: 25px;
+	text-align: center;
+	border-radius: 15px;
+	border: none;
+	outline: none;
+	background: #fff;
+}
+/* amozesh page end */
+
 /* ----------------------------- RESPONSIVE SCOPE START ----------- */
 
 /* mobile */
@@ -2781,7 +3095,41 @@ input {
 	body {
 		background-color: white;
 	}
+	/* amozeshpage  */
+	.btn-arrow-amozesh-slides {
+		height: 210px;
+	}
+	.parent-form {
+		height: 100%;
+		max-height: 210px;
+	}
 
+	.one-text-swiper-slide-amozesh > p {
+		white-space: nowrap;
+		font-weight: bolder;
+	}
+
+	.one-text-swiper-slide-amozesh > p:nth-of-type(1) {
+		font-size: 0.7rem;
+	}
+	.two-text-swiper-slide-amozesh > p {
+		white-space: nowrap;
+		font-weight: bolder;
+		font-size: 0.8rem;
+		padding: 6px;
+	}
+
+	/* box maghale start */
+
+	.bishtar > a,
+	.bishtar > i {
+		margin-left: 5px;
+		color: #00b8d4;
+		font-weight: bold;
+		margin-left: 15px;
+		margin-bottom: 15px;
+	}
+	/* amozesh page */
 	/*  */
 	.vector_2,
 	.vector_5,
@@ -2886,6 +3234,30 @@ input {
 	body {
 		background-color: green;
 	}
+
+	/* amozeshpage */
+
+	.parent-form {
+		height: 385px;
+	}
+	.btn-arrow-amozesh-slides {
+		height: 385px;
+	}
+
+	.parent-form > form > input {
+		width: 300px;
+	}
+
+	/*  */
+	.one-text-swiper-slide-amozesh > p:nth-of-type(1) {
+		white-space: nowrap;
+		font-size: 0.8rem;
+	}
+
+	.two-text-swiper-slide-amozesh > p {
+		white-space: nowrap;
+	}
+	/* amozeshpage */
 
 	/* start section four-box-with-road-way */
 	.vector_2,
@@ -3085,6 +3457,57 @@ input {
 	body {
 		background-color: pink;
 	}
+
+	/* amozesh page start */
+
+	.parent-amozesh-btn {
+		border: none;
+	}
+
+	.row {
+		width: 95%;
+		border-radius: 5px;
+
+		flex-direction: row;
+	}
+	.cm-btn {
+		margin-right: 20px;
+	}
+
+	.btn-arrow-amozesh-slides {
+		height: 510px;
+	}
+
+	.parent-form {
+		height: 510px;
+	}
+
+	.parent-form > form > input {
+		width: 250px;
+	}
+	.parent-form > form > input {
+		width: 350px;
+	}
+
+	/* swiper  start style text one and two */
+
+	.one-text-swiper-slide-amozesh > p {
+		font-size: 1rem;
+		font-weight: bold;
+	}
+
+	/*  */
+	.parent-boxes {
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+
+	.bishtar > a,
+	.bishtar > i {
+		margin: 15px 0px 5px 15px;
+	}
+	/* amozesh page end  */
+
 	.last-section {
 		margin-top: 150px;
 	}
@@ -3481,6 +3904,19 @@ input {
 	body {
 		background: rgb(110, 110, 107);
 	}
+
+	/* amozesh page start */
+
+	.parent-form {
+		height: 685px;
+	}
+	.btn-arrow-amozesh-slides {
+		height: 685px;
+	}
+	.parent-form > form > input {
+		width: 350px;
+	}
+	/* amozesh page end */
 	/* start section four-box-with-road-way */
 	.vector_5 {
 		top: 46px;
@@ -3527,6 +3963,12 @@ input {
 	body {
 		background: rgb(187, 137, 153);
 	}
+	/* amozesh page start */
+	.parent-form > form > input {
+		width: 400px;
+	}
+
+	/* amozesh page end  */
 	/* start section four-box-with-road-way */
 	.wrapper-box-four {
 		gap: 350px;
