@@ -2772,6 +2772,141 @@ input {
 	color: #00b8d4;
 }
 
+
+/*ADD PAGE desktop-51 */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.articles-content-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+
+.articles-content-wrapper article{
+        width: 100%;
+        max-width: 1220px;
+        margin: 35px;
+}
+
+
+/* breadcrumbs */
+
+.breadcrumb-section{
+        background: #F4F2F2;
+        border-radius: 15px;
+        margin-bottom: 30px;
+        font-weight: bold;
+     
+}
+.breadcrumb-section #breadcrumbs{
+        display:flex;
+        padding:8px 16px;
+        color: #828282;
+}
+
+      
+#breadcrumbs li a {
+        color: #828282;
+        text-decoration:none;
+}
+#breadcrumbs li a:hover {
+      border-bottom: 1px solid #828282;
+}
+      
+      
+#breadcrumbs li+li:before  {
+        padding:8px;
+        content: "/\00a0";
+        color: #828282;
+}
+
+#articles-wrapper{
+        margin-bottom:2.5rem;
+}
+#articles-wrapper h3{
+        color: #757171;
+        font-weight: bold;
+        margin: 0 6px 20px 0;
+       font-size: 1.5rem;
+}
+
+.articles{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        column-gap: 1.2rem;
+        row-gap: 2rem;
+}
+.articles .article{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+}
+.articles .article img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 15px 15px 0px 0px;
+}
+.articles .article p{
+        white-space: break-spaces;
+        text-align: center;
+        width: 100%;
+        padding: 10px 25px;
+        color: #333;
+        font-size: 14px;
+}
+.pagination-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        padding: 2rem;
+}
+.pagination{
+        display: flex;
+        color: #828282;
+}
+.pagination li{
+        text-align: center;
+        margin-left: 14px;
+}
+.pagination li a{
+        background: #FFFFFF;
+        border: 3px solid #C4C4C4;
+        box-sizing: border-box;
+        border-radius: 11px;
+        padding: 5px 14px;
+        font-weight: bold;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+}
+.pagination-arrow{
+        border: 3px solid #00B8D4 !important;
+        color: #00B8D4;
+}
+.pagination .active{
+        border: 3px solid #00B8D4;
+}
+
+
+/* ENd page 51 */
+
 /* end workWithus style */
 
 /* amozesh page start */
