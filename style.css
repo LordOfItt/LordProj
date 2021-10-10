@@ -357,7 +357,7 @@ header {
 }
 
 .parent-sign-up_and_iconbar {
-	border: 1px solid red;
+	border-bottom: 1px solid #fff;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -409,7 +409,7 @@ header {
 .responsive-menu div {
 	background: #fff;
 	padding: 1rem;
-	border-bottom: 1px solid rgb(192, 130, 107);
+	border-bottom: 1px solid rgba(156, 156, 156, 0.555);
 }
 .wrapper-menu-responsive {
 	display: none;
@@ -458,7 +458,7 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	z-index: 999;
+	z-index: 9999999;
 }
 .sticky.parent-responsive-logo_tell .be_most_none_if_sticky {
 	display: none;
@@ -3707,7 +3707,7 @@ h3 {
 	.parenet-didgah {
 		width: 95%;
 		flex-direction: row;
-
+		margin: 15px;
 		border-radius: 10px;
 	}
 

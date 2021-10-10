@@ -17,6 +17,7 @@ let fixed_arrow_upParent = document.querySelector('.fixed-arrow-up-parent');
 
 // icon bar select
 let BarIcon = document.querySelector('.fa-bars');
+
 // responsive menu select
 let resPonsiveMenu = document.querySelector('.responsive-menu');
 // responsive menu sticky select
@@ -51,6 +52,7 @@ formapplycancel.addEventListener('click', (e) => {
 	e.preventDefault();
 	formapply.style.display = 'none';
 });
+
 
 toggle.forEach((e) => {
 	e.addEventListener('click', () => {

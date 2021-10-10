@@ -55,16 +55,6 @@ let parentMainlogo = document.querySelector(
 	'.parent-main-logo-sigin_and_main-menu'
 );
 
-// chat online parent  select
-let parentchat_img = document.querySelector('.parent-chat-img');
-
-// chat box icon
-let IconchatBox = document.querySelector('#icon-chat-box');
-
-let chatBox = document.querySelector('.chat-box');
-// select arrow up
-let fixed_arrow_upParent = document.querySelector('.fixed-arrow-up-parent');
-
 // icon bar select
 let BarIcon = document.querySelector('.fa-bars');
 // responsive menu select
