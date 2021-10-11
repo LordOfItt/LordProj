@@ -3303,6 +3303,108 @@ h3 {
 /* section dedgah end  */
 /* amozesh page end */
 
+/* tarfe-page-start */
+
+.wrapper-tarfe {
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+}
+.wrapper-tarfe h1 {
+	background: transparent;
+	transform: translateY(20px);
+}
+
+.section-one-tarfe-page figure img {
+	width: 100%;
+}
+
+.section-one-tarfe-page ul {
+	transform: translateY(-33px);
+
+	bottom: 0px;
+	display: flex;
+
+	width: 100%;
+	justify-content: space-around;
+}
+.section-one-tarfe-page ul li {
+	background: #1b7b8a;
+	border-radius: 10px 10px 0 0;
+}
+.section-one-tarfe-page ul li a {
+	color: white;
+	font-size: 0.6rem;
+	padding: 5px;
+	font-weight: bolder;
+}
+
+/* title-tarefe start */
+
+.title-tarefe {
+	font-weight: bold;
+	padding: 15px;
+	flex-direction: column;
+	display: flex;
+	align-items: flex-start;
+}
+.title-tarefe > p {
+	font-size: 0.8rem;
+	margin-top: 15px;
+	color: #828282;
+}
+/* title-tarefe end*/
+
+/* article tarfe-page start */
+.text-tarefe {
+	width: 100%;
+	text-align: center;
+	background: #e5e5e5;
+}
+.text-tarefe > p {
+	font-size: 1rem;
+	padding: 15px;
+}
+
+/* article tarfe-page end */
+
+/* swiper box start*/
+
+.box-swiper-tarfe {
+	position: relative;
+
+	background: linear-gradient(to bottom, #ff2ae8, #645bf6);
+	border-radius: 20px;
+	border-bottom-left-radius: 160px;
+	border-bottom-right-radius: 160px;
+	box-shadow: 0 15px 0 #fff, inset 0 -15px 0 rgba(255, 255, 255, 0.25),
+		0 45px 0 rgba(0, 0, 0, 0.15);
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box-swiper-tarfe::before {
+	content: '';
+	position: absolute;
+	top: -140%;
+	left: -40%;
+	width: 100%;
+	height: 120%;
+	background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2));
+	transform: rotate(35deg);
+	pointer-events: none;
+	filter: blur(5px);
+}
+
+.box-swiper-tarfe ul li {
+	font-size: 0.8rem;
+	color: white;
+}
+/* swiper box end  */
+
+/* tarfe-page-end */
 /* ----------------------------- RESPONSIVE SCOPE START ----------- */
 
 /* mobile */
@@ -3679,6 +3781,23 @@ h3 {
 		background-color: pink;
 	}
 
+	/* tarefe page start */
+	.section-one-tarfe-page ul li {
+		padding: 15px;
+		transform: translateY(-30px);
+	}
+	.section-one-tarfe-page ul li a {
+		font-size: 1rem;
+	}
+
+	.text-tarefe {
+		width: 95%;
+		transform: translateX(-2.5%);
+		text-align: center;
+		background: #e5e5e5;
+	}
+
+	/* tarefe page end  */
 	/* amozesh page start */
 
 	.row-one-didgah {
