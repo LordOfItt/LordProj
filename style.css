@@ -3346,10 +3346,12 @@ h3 {
 }
 .rotatebtn{
 	transform: rotate(180deg);
+	
 }
-/* .course-supp-add p:nth-of-type(){
+.course-supp-button button i{
+	transition: 1s;
+}
 
-} */
 .show p{
 	opacity: 1;
 }
