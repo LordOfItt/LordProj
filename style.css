@@ -3372,17 +3372,13 @@ h3 {
 
 .box-swiper-tarfe {
 	position: relative;
-
 	background: linear-gradient(to bottom, #ff2ae8, #645bf6);
 	border-radius: 20px;
-	border-bottom-left-radius: 160px;
-	border-bottom-right-radius: 160px;
-	box-shadow: 0 15px 0 #fff, inset 0 -15px 0 rgba(255, 255, 255, 0.25),
-		0 45px 0 rgba(0, 0, 0, 0.15);
+	border-top-right-radius: 60px;
+	border-top-left-radius: 0px;
+	box-shadow: 0 0px 0 #fff, inset 0 -15px 0 rgba(255, 255, 255, 0.25),
+		0 5px 0 rgba(0, 0, 0, 0.15);
 	overflow: hidden;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 .box-swiper-tarfe::before {
@@ -3399,9 +3395,29 @@ h3 {
 }
 
 .box-swiper-tarfe ul li {
-	font-size: 0.8rem;
+	font-size: 0.9rem;
 	color: white;
 }
+.box-swiper-tarfe > P {
+	color: white;
+	font-weight: bold;
+}
+
+.btn-swiper-tarefe {
+	background: #00b8d4;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	border-radius: 5px 5px 0px 0px;
+	margin-top: 15px;
+}
+
+.icon-swiper-tarefe {
+	background: black;
+	width: 100%;
+	transform: translate(0px, -120px);
+}
+
 /* swiper box end  */
 
 /* tarfe-page-end */
