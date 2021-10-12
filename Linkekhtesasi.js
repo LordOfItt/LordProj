@@ -74,5 +74,6 @@ toggle.forEach((e) => {
 	});
 });
 
+// end responsive menu
 btnVorod.addEventListener('click', (e) => {e.preventDefault()});
 btnedame.addEventListener('click', (e) =>{e.preventDefault()})
