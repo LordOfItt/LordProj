@@ -3371,38 +3371,38 @@ h3 {
 /* swiper box start*/
 
 .box-swiper-tarfe {
-	position: relative;
-	background: linear-gradient(to bottom, #ff2ae8, #645bf6);
-	border-radius: 20px;
-	border-top-right-radius: 60px;
-	border-top-left-radius: 0px;
-	box-shadow: 0 0px 0 #fff, inset 0 -15px 0 rgba(255, 255, 255, 0.25),
-		0 5px 0 rgba(0, 0, 0, 0.15);
+	box-shadow: inset -5px 0px 50px -3px #7571718c;
+	text-align: right;
+	border-radius: 5px;
+	padding: 5px;
 	overflow: hidden;
 }
 
-.box-swiper-tarfe::before {
-	content: '';
-	position: absolute;
-	top: -140%;
-	left: -40%;
+.box-swiper-tarfe ul {
 	width: 100%;
-	height: 120%;
-	background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2));
-	transform: rotate(35deg);
-	pointer-events: none;
-	filter: blur(5px);
 }
-
+.parent-ul-tarfe-box-swiper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .box-swiper-tarfe ul li {
-	font-size: 0.9rem;
-	color: white;
+	font-size: 0.8rem;
+	font-weight: bolder;
+	color: rgb(100, 100, 100);
 }
 .box-swiper-tarfe > P {
-	color: white;
-	font-weight: bold;
+	color: rgb(68, 66, 66);
+	font-weight: bolder;
+	font-size: 0.8rem;
+	padding: 5px;
+	border-bottom: 1px solid #e5e5e5;
 }
 
+.box-swiper-tarfe > P:nth-of-type(2) {
+	margin-bottom: 9px;
+}
 .btn-swiper-tarefe {
 	background: #00b8d4;
 	text-align: center;
@@ -3410,12 +3410,9 @@ h3 {
 	font-weight: bold;
 	border-radius: 5px 5px 0px 0px;
 	margin-top: 15px;
-}
-
-.icon-swiper-tarefe {
-	background: black;
-	width: 100%;
-	transform: translate(0px, -120px);
+	font-size: 0.9rem;
+	width: 103%;
+	transform: translate(0px, 5px);
 }
 
 /* swiper box end  */
@@ -3428,6 +3425,14 @@ h3 {
 	body {
 		background-color: white;
 	}
+
+	.parent-ul-tarfe-box-swiper {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+
 	/* amozeshpage  */
 	.btn-arrow-amozesh-slides {
 		height: 210px;
@@ -3566,6 +3571,10 @@ h3 {
 @media screen and (min-width: 577px) {
 	body {
 		background-color: green;
+	}
+
+	.box-swiper-tarfe {
+		box-shadow: none;
 	}
 
 	/* amozeshpage */
@@ -3795,6 +3804,14 @@ h3 {
 @media screen and (min-width: 768px) {
 	body {
 		background-color: pink;
+	}
+
+	.box-swiper-tarfe ul li {
+		font-size: 0.8rem;
+	
+	}
+	.box-swiper-tarfe > p {
+		font-size: 0.8rem;
 	}
 
 	/* tarefe page start */
@@ -4349,6 +4366,18 @@ h3 {
 	body {
 		background: rgb(187, 137, 153);
 	}
+
+	.box-swiper-tarfe {
+		text-align: center;
+	}
+
+	.box-swiper-tarfe ul li {
+		font-size: 0.8rem;
+	}
+	.box-swiper-tarfe > p {
+		font-size: 0.9rem;
+	}
+
 	/* amozesh page start */
 	.parent-form > form > input {
 		width: 400px;
