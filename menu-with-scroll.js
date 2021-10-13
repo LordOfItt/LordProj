@@ -61,15 +61,15 @@ toggle.forEach((e) => {
 // end  responsive menu
 
 // all scorll event and function
-// document.addEventListener('scroll', () => {
-// 	let sY = window.scrollY;
-// 	if (sY >= 100) {
-// 		parentresponsivelogotell.classList.add('sticky');
-// 		parentMainlogo.classList.add('fixed_Mainmenu_and_logo');
-// 	}
-// 	if (sY <= 100) {
-// 		parentresponsivelogotell.classList.remove('sticky');
+document.addEventListener('scroll', () => {
+	let sY = window.scrollY;
+	if (sY >= 100) {
+		parentresponsivelogotell.classList.add('sticky');
+		parentMainlogo.classList.add('fixed_Mainmenu_and_logo');
+	}
+	if (sY <= 100) {
+		parentresponsivelogotell.classList.remove('sticky');
 
-// 		parentMainlogo.classList.remove('fixed_Mainmenu_and_logo');
-// 	}
-// });
+		parentMainlogo.classList.remove('fixed_Mainmenu_and_logo');
+	}
+});
