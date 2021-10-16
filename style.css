@@ -3530,7 +3530,6 @@ h3 {
 	transform: translate(4px, 4px);
 }
 
-
 /* tarfe-page-end */
 /* Start Course Page */
 .main-content-wrapper {
@@ -3911,29 +3910,28 @@ h3 {
 	border-radius: 10px;
 }
 
-
 /* TABLE SECTION GRAFIC Service */
 
 /*Table Graphic services*/
 .graphic-services {
-	margin-top:3rem;
-	background-color: #E5E5E5;
-    }
-    .table-btn-wrapper{
+	margin-top: 3rem;
+	background-color: #e5e5e5;
+}
+.table-btn-wrapper {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-top: 1rem;
-    }
-    .table-btn{
+}
+.table-btn {
 	bottom: 0;
 	border: none;
-	background-color: #00B8D4;
+	background-color: #00b8d4;
 	height: 2.5rem;
-   	width: 15rem;
+	width: 15rem;
 	border-radius: 15px 15px 0 0;
-    }
-    .table-btn a{
+}
+.table-btn a {
 	color: #fff;
 	display: inline-block;
 	width: 100%;
@@ -3943,70 +3941,70 @@ h3 {
 	justify-content: center;
 	align-items: center;
 	font-weight: bold;
-    }
-    .blueTable tbody{
-	background-color: #FFFFFF;
-    }
-     .graphic-services  h1{
-	     text-align: center;
-	     color: #828282;
-	     padding: 1rem 0 0 0;
-	     font-size: 1.2rem;
-     }
-     .blueTable tr:last-child td:first-child {
-	     border-bottom-right-radius: 15px;
-	}
+}
+.blueTable tbody {
+	background-color: #ffffff;
+}
+.graphic-services h1 {
+	text-align: center;
+	color: #828282;
+	padding: 1rem 0 0 0;
+	font-size: 1.2rem;
+}
+.blueTable tr:last-child td:first-child {
+	border-bottom-right-radius: 15px;
+}
 
-     .blueTable tr:last-child td:last-child {
-	    border-bottom-left-radius: 15px;
-    }
-    .blueTable th:first-child td:first-child {
+.blueTable tr:last-child td:last-child {
 	border-bottom-left-radius: 15px;
-	}
+}
+.blueTable th:first-child td:first-child {
+	border-bottom-left-radius: 15px;
+}
 
-     .blueTable{
-	     border-radius: 15px;
-	     padding: 1rem 0;
-     }
-      table.blueTable {
+.blueTable {
+	border-radius: 15px;
+	padding: 1rem 0;
+}
+table.blueTable {
 	width: 100%;
 	text-align: center;
 	border-spacing: 0;
-      }
-     
-      table.blueTable td, table.blueTable th {
-	border: 1px solid #C4C4C4;
+}
+
+table.blueTable td,
+table.blueTable th {
+	border: 1px solid #c4c4c4;
 	padding: 10px 2px;
-      }
-      table.blueTable tbody td {
+}
+table.blueTable tbody td {
 	font-size: 13px;
 	color: #828282;
 	font-weight: bold;
-      }
-      table.blueTable thead {
-	
-	border-bottom: 2px solid #C4C4C4;
-      }
-      table.blueTable thead tr th{
-	background-color: #00B8D4;
-      }
-      table.blueTable thead tr th:first-child{
+}
+table.blueTable thead {
+	border-bottom: 2px solid #c4c4c4;
+}
+table.blueTable thead tr th {
+	background-color: #00b8d4;
+}
+table.blueTable thead tr th:first-child {
 	border-radius: 0 15px 0 0;
-      }
-      table.blueTable thead tr th:last-child{
+}
+table.blueTable thead tr th:last-child {
 	border-radius: 15px 0 0 0;
-      }
-      table.blueTable thead th {
+}
+table.blueTable thead th {
 	font-size: 15px;
 	font-weight: bold;
-	color: #FFFFFF;
+	color: #ffffff;
 	text-align: center;
-	border-left: 1px solid #C4C4C4;
-      }
-      table.blueTable thead th:first-child {
+	border-left: 1px solid #c4c4c4;
+}
+table.blueTable thead th:first-child {
 	border-left: none;
-      }
-     
+}
+
 /* End Course Page */
 /* ----------------------------- RESPONSIVE SCOPE START ----------- */
 
@@ -4162,12 +4160,8 @@ h3 {
 	body {
 		background-color: green;
 	}
-	.blueTable th{
+	.blueTable th {
 		width: 32%;
-	      }
-
-	.box-swiper-tarfe {
-		box-shadow: none;
 	}
 
 	/* panel */
@@ -4447,20 +4441,25 @@ h3 {
 	body {
 		background-color: pink;
 	}
+	.box-swiper-tarfe {
+		box-shadow: 0px 2px 13px 7px rgba(16, 131, 255, 0.44);
+	}
 
+	.UX_UI_BOX {
+		box-shadow: 0px 2px 13px 7px rgba(16, 131, 255, 0.44);
+	}
 	/* grafic service Table */
-	.graphic-services{
+	.graphic-services {
 		padding: 0 2.5rem;
 	}
-	.graphic-services h1{
+	.graphic-services h1 {
 		padding: 2rem 0 0.5rem 0;
 	}
-	.table-btn{
+	.table-btn {
 		height: 3rem;
 		width: 20rem;
 		font-size: 1rem;
 	}
-	
 
 	/* tarefe-page */
 	.parent-two-boxes-ui-ux {
