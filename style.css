@@ -3424,8 +3424,16 @@ h3 {
 }
 
 /* article tarfe-page end */
-/* swiper box start*/
+/* swiper tarefe  box start*/
 .box-swiper-tarfe {
+	box-shadow: inset -5px 0px 50px -3px #7571718c;
+	text-align: right;
+	border-radius: 5px;
+	padding: 5px;
+	overflow: hidden;
+}
+
+.tarefe-box-wrapper {
 	box-shadow: inset -5px 0px 50px -3px #7571718c;
 	text-align: right;
 	border-radius: 5px;
@@ -3448,12 +3456,27 @@ h3 {
 	justify-content: center;
 	align-items: center;
 }
-.box-swiper-tarfe ul li {
+
+.tarefe-box-wrapper {
+	text-align: center;
+}
+
+.box-swiper-tarfe ul li,
+.tarfe-boxes ul li {
 	font-size: 0.8rem;
 	font-weight: bolder;
 	color: rgb(100, 100, 100);
 }
-.box-swiper-tarfe > P {
+
+.tarefe-box-wrapper {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.box-swiper-tarfe > P,
+.tarefe-box-wrapper > p {
 	color: rgb(68, 66, 66);
 	font-weight: bolder;
 	font-size: 0.8rem;
@@ -3461,9 +3484,11 @@ h3 {
 	border-bottom: 1px solid #e5e5e5;
 }
 
-.box-swiper-tarfe > P:nth-of-type(2) {
+.box-swiper-tarfe > P:nth-of-type(2),
+.tarefe-box-wrapper > P:nth-of-type(2) {
 	margin-bottom: 9px;
 }
+
 .btn-swiper-tarefe {
 	background: #00b8d4;
 	text-align: center;
@@ -3528,6 +3553,13 @@ h3 {
 	font-size: 0.9rem;
 	width: 103%;
 	transform: translate(4px, 4px);
+}
+
+.special-site-parent-tarefe-page {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 30%);
+	justify-content: center;
+	gap: 15px;
 }
 
 /* tarfe-page-end */
@@ -3916,7 +3948,9 @@ h3 {
 .graphic-services {
 	margin-top: 3rem;
 	background-color: #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
 }
+
 .table-btn-wrapper {
 	display: flex;
 	justify-content: center;
@@ -3928,8 +3962,8 @@ h3 {
 	border: none;
 	background-color: #00b8d4;
 	height: 2.5rem;
-	width: 15rem;
-	border-radius: 15px 15px 0 0;
+	width: 100%;
+	border-radius: 5px 5px 0 0;
 }
 .table-btn a {
 	color: #fff;
@@ -4005,7 +4039,15 @@ table.blueTable thead th:first-child {
 	border-left: none;
 }
 
-/* End Course Page */
+/* start seo-section */
+
+.title-seo {
+	border-top: 1px solid #e5e5e5;
+	margin-top: 25px;
+}
+
+/* end  seo-section */
+
 /* ----------------------------- RESPONSIVE SCOPE START ----------- */
 
 /* mobile */
@@ -4014,12 +4056,20 @@ table.blueTable thead th:first-child {
 		background-color: white;
 	}
 
+	/* start section tarefe */
+	.special-site-parent-tarefe-page {
+		grid-template-columns: repeat(auto-fit, 100%);
+	}
+
+	.tarfe-boxes,
 	.parent-ul-tarfe-box-swiper {
 		width: 100%;
 		display: flex;
 		flex-direction: column;
 		text-align: center;
 	}
+
+	/* end  section tarefe */
 
 	/* amozeshpage  */
 	.btn-arrow-amozesh-slides {
@@ -4441,6 +4491,8 @@ table.blueTable thead th:first-child {
 	body {
 		background-color: pink;
 	}
+
+	/* start Tarefe Page  */
 	.box-swiper-tarfe {
 		box-shadow: 0px 2px 13px 7px rgba(16, 131, 255, 0.44);
 	}
@@ -4448,6 +4500,9 @@ table.blueTable thead th:first-child {
 	.UX_UI_BOX {
 		box-shadow: 0px 2px 13px 7px rgba(16, 131, 255, 0.44);
 	}
+
+	/* start Tarefe Page  */
+
 	/* grafic service Table */
 	.graphic-services {
 		padding: 0 2.5rem;
@@ -4459,6 +4514,7 @@ table.blueTable thead th:first-child {
 		height: 3rem;
 		width: 20rem;
 		font-size: 1rem;
+		border-radius: 15px 15px 0px 0px;
 	}
 
 	/* tarefe-page */
