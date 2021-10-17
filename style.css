@@ -3364,7 +3364,6 @@ h3 {
 
 .wrapper-tarfe {
 	flex-direction: column;
-	display: flex;
 	align-items: center;
 }
 .wrapper-tarfe h1 {
@@ -3958,7 +3957,6 @@ h3 {
 	margin-top: 1rem;
 }
 .table-btn {
-	bottom: 0;
 	border: none;
 	background-color: #00b8d4;
 	height: 2.5rem;
@@ -4048,6 +4046,116 @@ table.blueTable thead th:first-child {
 
 /* end  seo-section */
 
+/* ُStart Pakage Section */
+.pakage-sec-wrapper{
+	width: 99%;
+	margin: 2rem auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,100%);
+	justify-content: center;
+}
+.pakage-sec{
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+	border-radius: 15px;
+	width: 100%;
+	margin: 0.8rem 0;
+	background: #FFFFFF;
+}
+.pakage-sec h3{
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+	color: #828282;
+	padding: 17px 5px;
+	border-bottom: 1px solid #e5e5e5;
+	width: fit-content;
+}
+.pakage-head{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.pakage-sec h4{
+	padding:10px 5px;
+	border-bottom: 1px solid #e5e5e5;
+	font-weight: bold;
+	font-size: 15px;
+	text-align: center;
+	color: #828282;
+	transform: unset;
+	width: fit-content;
+}
+.pakage-sec h4 span{
+	color: #00B8D4;
+}
+.pakage-text-wrapper{
+	display: flex;
+	justify-content:space-between;
+	align-items: flex-start;
+	flex-direction: column;
+	font-size: 12px;
+	padding: 1rem 0 0.3rem 0;
+	
+}
+.pakage-text-wrapper p{
+	color: rgb(100, 100, 100);
+	text-align: center;
+	font-size: 0.8rem;
+	font-weight: bolder;
+	line-height:2rem;
+}
+.pakage-text-right{
+	width: 100%;
+
+}
+.pakage-text-left{
+	width: 100%;
+}
+.pakage-text-continue{
+	width: 100%;
+	transition: all 0.4s ease-in-out ; 
+	opacity: 0;
+	visibility: hidden;
+	height: 0;
+}
+.pakage-text-continue p{
+	display: none;
+}
+.pakage-text-continue.showtext p{
+	display: block;
+}
+.showtext{
+	opacity: 1;
+	visibility: visible;
+	height:auto;
+}
+.pakage-btn-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.pakage-btn{
+    border: none;
+    background-color: #00b8d4;
+    height: 2.5rem;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+/* X */
+.tarfe-page-fix {
+	margin: 1rem 0 4rem 0;
+	
+}
 /* ----------------------------- RESPONSIVE SCOPE START ----------- */
 
 /* mobile */
@@ -4491,6 +4599,18 @@ table.blueTable thead th:first-child {
 	body {
 		background-color: pink;
 	}
+	/* X */
+	.tarfe-page-fix {
+		margin-top: 3rem;
+		
+	}
+
+	/* Start Pakage Section */
+	.pakage-sec-wrapper{
+		grid-template-columns: repeat(auto-fit,32%);
+		gap: 0.5rem;
+	}
+
 
 	/* start Tarefe Page  */
 	.box-swiper-tarfe {

@@ -36,3 +36,20 @@ var swiper = new Swiper('.mySwiper', {
 		},
 	},
 });
+
+// MORE BTN
+
+const btnMore= document.querySelectorAll('.pakage-btn')
+const textContinue=document.querySelectorAll('.pakage-text-continue')
+btnMore.forEach((btnM,index) => {
+	btnM.addEventListener('click',()=>{
+		textContinue.forEach((textC,indexx) => {
+			if(index==indexx){
+				textC.classList.toggle('showtext')
+			}
+		});
+	})
+});
+
+
+
