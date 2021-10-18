@@ -23,6 +23,49 @@ li {
 	list-style-type: none;
 }
 
+/* start all-animation */
+
+/* three_box_animaton_Tarefe_page start */
+
+.pakage-sec {
+	opacity: 1;
+	visibility: visible;
+	height: 600px;
+	transition: all 0.4s ease-in-out;
+}
+
+.showtext {
+	height: 98%;
+}
+
+.pakage-text-continue {
+	width: 100%;
+}
+.pakage-text-continue p {
+	opacity: 0;
+	visibility: hidden;
+}
+.showtext .pakage-text-continue p {
+	animation: dnDb_p_animation_tarfe_page 1s ease-in-out 1s forwards alternate;
+}
+
+@keyframes dnDb_p_animation_tarfe_page {
+	from {
+		opacity: 0;
+		visibility: hidden;
+		overflow: hidden;
+	}
+	to {
+		opacity: 1;
+		visibility: visible;
+		overflow: visible;
+	}
+}
+
+/* three_box_animaton_Tarefe_page end */
+
+/* end all-animation */
+
 @font-face {
 	font-family: vazirL;
 	src: url(fonts/Vazir-Light.ttf);
@@ -805,13 +848,13 @@ header > form > button {
 
 /* start parent-boxes */
 
-.parent-boxes {
+.parent-boxes-grid-hompage-boxes {
 	gap: 5px;
 	display: grid;
 	grid-template-columns: repeat(3, minmax(30%, 100%));
 	transform: translate(0px, 40px);
 }
-.parent-boxes h4 {
+.parent-boxes-grid-hompage-boxes h4 {
 	color: #000;
 }
 
@@ -1315,7 +1358,7 @@ header > form > button {
 /* START FOOTER */
 footer {
 	margin: 0;
-	width: 100%;
+
 	background-color: #111;
 	color: #fafafad2;
 	font-weight: bold;
@@ -2993,12 +3036,24 @@ input[type='number'] {
 	font-size: 0.7rem;
 	text-align: center;
 }
+
 .parent-form > form > div {
-	background: skyblue;
 	height: 30px;
-	width: 40px;
+	width: 27px;
+}
+
+.search-btn-amozesh-page {
+	outline: none;
+	border: none;
+	height: 30px;
+	width: 25px;
+}
+
+.parent-form > form > div,
+.search-btn-amozesh-page {
+	background: skyblue;
 	display: flex;
-	justify-content: center;
+	justify-content:left;
 	align-items: center;
 	border-radius: 0px 0px 15px 0px;
 	color: #fff;
@@ -3008,17 +3063,20 @@ input[type='number'] {
 .slides {
 	position: relative;
 }
+
 .btn-arrow-amozesh-slides {
 	position: absolute;
-	top: 0px;
+	top: 80px;
 	width: 100%;
 	cursor: pointer;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	z-index: 9999;
 }
-
+.nxt-btn-slide,
+.prev-btn-slide {
+	z-index: 99999;
+}
 .btn-arrow-amozesh-slides > div {
 	color: rgb(255, 255, 255);
 	font-size: 20px;
@@ -3119,11 +3177,14 @@ input[type='number'] {
 /* js class toggel heart icon end */
 /* swiper end  */
 
+/* amozesh page thi parent-boxes */
 .parent-boxes {
 	display: flex;
 	justify-content: space-evenly;
 	flex-direction: column;
 }
+
+/* amozesh page thi parent-boxes */
 .wrapper-box-article-amozesh {
 	display: flex;
 	justify-content: space-evenly;
@@ -3363,6 +3424,7 @@ h3 {
 /* tarfe-page-start */
 
 .wrapper-tarfe {
+	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
@@ -4047,21 +4109,23 @@ table.blueTable thead th:first-child {
 /* end  seo-section */
 
 /* ُStart Pakage Section */
-.pakage-sec-wrapper{
+.pakage-sec-wrapper {
 	width: 99%;
 	margin: 2rem auto;
 	display: grid;
-	grid-template-columns: repeat(auto-fit,100%);
+	grid-template-columns: repeat(auto-fit, 100%);
 	justify-content: center;
 }
-.pakage-sec{
+.pakage-sec {
 	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
 	border-radius: 15px;
 	width: 100%;
 	margin: 0.8rem 0;
-	background: #FFFFFF;
+	background: #ffffff;
+	transition: all 1s ease-in-out;
+	position: relative;
 }
-.pakage-sec h3{
+.pakage-sec h3 {
 	font-weight: bold;
 	font-size: 18px;
 	text-align: center;
@@ -4070,15 +4134,15 @@ table.blueTable thead th:first-child {
 	border-bottom: 1px solid #e5e5e5;
 	width: fit-content;
 }
-.pakage-head{
+.pakage-head {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
-.pakage-sec h4{
-	padding:10px 5px;
+.pakage-sec h4 {
+	padding: 10px 5px;
 	border-bottom: 1px solid #e5e5e5;
 	font-weight: bold;
 	font-size: 15px;
@@ -4087,74 +4151,57 @@ table.blueTable thead th:first-child {
 	transform: unset;
 	width: fit-content;
 }
-.pakage-sec h4 span{
-	color: #00B8D4;
+.pakage-sec h4 span {
+	color: #00b8d4;
 }
-.pakage-text-wrapper{
+.pakage-text-wrapper {
 	display: flex;
-	justify-content:space-between;
+	justify-content: space-between;
 	align-items: flex-start;
 	flex-direction: column;
 	font-size: 12px;
 	padding: 1rem 0 0.3rem 0;
-	
 }
-.pakage-text-wrapper p{
+.pakage-text-wrapper p {
 	color: rgb(100, 100, 100);
 	text-align: center;
 	font-size: 0.8rem;
 	font-weight: bolder;
-	line-height:2rem;
+	line-height: 2rem;
 }
-.pakage-text-right{
+.pakage-text-right {
 	width: 100%;
+}
+.pakage-text-left {
+	width: 100%;
+}
 
-}
-.pakage-text-left{
+.pakage-btn-wrapper {
+	position: absolute;
+	bottom: 0px;
 	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1rem;
 }
-.pakage-text-continue{
+.pakage-btn {
+	border: none;
+	background-color: #00b8d4;
+	height: 2.5rem;
 	width: 100%;
-	transition: all 0.4s ease-in-out ; 
-	opacity: 0;
-	visibility: hidden;
-	height: 0;
-}
-.pakage-text-continue p{
-	display: none;
-}
-.pakage-text-continue.showtext p{
-	display: block;
-}
-.showtext{
-	opacity: 1;
-	visibility: visible;
-	height:auto;
-}
-.pakage-btn-wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
-}
-.pakage-btn{
-    border: none;
-    background-color: #00b8d4;
-    height: 2.5rem;
-    width: 100%;
-    border-radius: 5px 5px 0 0;
-    color: #fff;
-    border-radius: 15px 15px 0 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 16px;
+	border-radius: 5px 5px 0 0;
+	color: #fff;
+	border-radius: 15px 15px 0 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-size: 16px;
 }
 /* X */
 .tarfe-page-fix {
 	margin: 1rem 0 4rem 0;
-	
 }
 /* ----------------------------- RESPONSIVE SCOPE START ----------- */
 
@@ -4269,7 +4316,7 @@ table.blueTable thead th:first-child {
 	.parent-all-btns {
 		margin: 0;
 	}
-	.parent-boxes {
+	.parent-boxes-grid-hompage-boxes {
 		grid-template-columns: repeat(2, minmax(49%, 100%));
 	}
 
@@ -4599,18 +4646,20 @@ table.blueTable thead th:first-child {
 	body {
 		background-color: pink;
 	}
+	.btn-arrow-amozesh-slides {
+		top: 134px;
+	}
+
 	/* X */
 	.tarfe-page-fix {
 		margin-top: 3rem;
-		
 	}
 
 	/* Start Pakage Section */
-	.pakage-sec-wrapper{
-		grid-template-columns: repeat(auto-fit,32%);
+	.pakage-sec-wrapper {
+		grid-template-columns: repeat(auto-fit, 32%);
 		gap: 0.5rem;
 	}
-
 
 	/* start Tarefe Page  */
 	.box-swiper-tarfe {

@@ -1,5 +1,3 @@
-
-
 var swiper = new Swiper('.mySwiper', {
 	slidesPerGroup: 1,
 
@@ -39,17 +37,14 @@ var swiper = new Swiper('.mySwiper', {
 
 // MORE BTN
 
-const btnMore= document.querySelectorAll('.pakage-btn')
-const textContinue=document.querySelectorAll('.pakage-text-continue')
-btnMore.forEach((btnM,index) => {
-	btnM.addEventListener('click',()=>{
-		textContinue.forEach((textC,indexx) => {
-			if(index==indexx){
-				textC.classList.toggle('showtext')
+const btnMore = document.querySelectorAll('.pakage-btn');
+const pakageSec = document.querySelectorAll('.pakage-sec');
+btnMore.forEach((btnM, index) => {
+	btnM.addEventListener('click', () => {
+		pakageSec.forEach((pak, indexx) => {
+			if (index == indexx) {
+				pak.classList.toggle('showtext');
 			}
 		});
-	})
+	});
 });
-
-
-
