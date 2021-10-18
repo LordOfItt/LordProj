@@ -62,6 +62,65 @@ li {
 	}
 }
 
+/* start scroll bar */
+
+::-webkit-scrollbar {
+	width: 0;
+}
+
+#scorllPath {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	width: 10px;
+	height: 100%;
+	background: rgba(225, 255, 255, 0.05);
+	z-index: 999;
+}
+
+#progressbarScorll {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	width: 10px;
+	background: linear-gradient(to top, #008aff, #00ffe7);
+	animation: animate 5s infinite;
+	z-index: 999;
+}
+@keyframes animate {
+	0%,
+	100% {
+		filter: hue-rotate(0deg);
+	}
+	50% {
+		filter: hue-rotate(360deg);
+	}
+}
+
+#progressbarScorll::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, #008aff, #00ffe7);
+	filter: blur(10px);
+}
+
+#progressbarScorll::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, #008aff, #00ffe7);
+	filter: blur(30px);
+}
+
+/* end scroll bar  */
+
 /* three_box_animaton_Tarefe_page end */
 
 /* end all-animation */
@@ -3053,7 +3112,7 @@ input[type='number'] {
 .search-btn-amozesh-page {
 	background: skyblue;
 	display: flex;
-	justify-content:left;
+	justify-content: left;
 	align-items: center;
 	border-radius: 0px 0px 15px 0px;
 	color: #fff;
