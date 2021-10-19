@@ -191,21 +191,13 @@ li {
 }
 
 .jsClass_animation_logo {
-	animation: LogoAnimate 1s ease-in-out infinite alternate;
+	animation: LogoAnimate 1s ease-in-out forwards alternate;
 }
 
-.jsClass_animation_logo2 {
-	animation: LogoAnimate2 1s ease-in-out forwards alternate;
-}
-@keyframes LogoAnimate2 {
-	0%,
-	100% {
-		clip-path: polygon(100% 0, 0% 0, 0 100%, 100% 100%);
-	}
-}
 @keyframes LogoAnimate {
 	0% {
 		clip-path: polygon(100% 0, 0% 0, 0 100%, 0% 0%);
+		transform: translateY(0px) rotate(0deg);
 	}
 	25% {
 		clip-path: polygon(100% 0, 0% 0, 0 100%, 25% 25%);
@@ -218,8 +210,40 @@ li {
 		clip-path: polygon(100% 0, 0% 0, 0 100%, 74% 75%);
 	}
 
+	90% {
+		clip-path: polygon(100% 0, 0% 0, 0 100%, 90% 90%);
+	}
+	95% {
+		clip-path: polygon(100% 0, 0% 0, 0 100%, 95% 95%);
+	}
 	100% {
 		clip-path: polygon(100% 0, 0% 0, 0 100%, 100% 100%);
+		transform: translateY(-10px) rotateY(360deg);
+	}
+}
+
+.jsClass_animation_logo2 {
+	animation: LogoAnimate2 1s ease-in-out forwards alternate;
+}
+
+@keyframes LogoAnimate2 {
+	0%,
+	100% {
+		clip-path: polygon(100% 0, 0% 0, 0 100%, 100% 100%);
+		transform: translateY(-10px) rotateY(360deg);
+	}
+}
+
+.jsClass_animation_logo_3 {
+	animation: LogoAnimate3 1s ease-in-out forwards alternate;
+}
+
+@keyframes LogoAnimate3 {
+	0% {
+		transform: translateY(0) rotate(0deg);
+	}
+	100% {
+		transform: translateY(100px) rotate(45deg);
 	}
 }
 /* logo animation end  */
@@ -333,7 +357,7 @@ header {
 	left: 50px;
 	bottom: 82px;
 }
-.social-header li a span{
+.social-header li a span {
 	font: 12px sans-serif;
 	border-radius: 3px;
 	line-height: 24px;
@@ -342,13 +366,9 @@ header {
 	opacity: 0;
 	padding: 4px 8px;
 	position: absolute;
-	transition: opacity .3s, left .5s;
+	transition: opacity 0.3s, left 0.5s;
 	top: 50%;
-
 }
-
-
-
 
 .social-header i {
 	background: transparent;
@@ -364,22 +384,22 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    }
-.social-header li a i:hover span{
+}
+.social-header li a i:hover span {
 	left: 120%;
 	opacity: 1;
 }
 .social-header li a {
 	color: rgb(230, 224, 224);
 }
-.social-header li  a i{
+.social-header li a i {
 	border-radius: 50%;
 }
 .social-header a span:before {
-	content: "";
+	content: '';
 	display: block;
 	height: 8px;
-  	width: 8px;
+	width: 8px;
 	left: -4px;
 	margin-top: -4px;
 	position: absolute;
@@ -393,27 +413,43 @@ header {
 .social-header i.fa-skype:hover,
 .social-header i.fa-skype span,
 .social-header i.fa-skype span:before {
-	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
-	}
+	background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+}
 
 .social-header i.fa-telegram-plane:hover,
 .social-header i.fa-telegram-plane span,
 .social-header i.fa-telegram-plane span:before {
-	background: rgb(21,162,219);
-	background: linear-gradient(90deg, rgba(21,162,219,1) 0%, rgba(59,89,152,1) 82%);}
+	background: rgb(21, 162, 219);
+	background: linear-gradient(
+		90deg,
+		rgba(21, 162, 219, 1) 0%,
+		rgba(59, 89, 152, 1) 82%
+	);
+}
 
 .social-header i.fa-instagram:hover,
 .social-header i.fa-instagram span,
 .social-header i.fa-instagram span:before {
 	background: #d6249f;
-	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+	background: radial-gradient(
+		circle at 30% 107%,
+		#fdf497 0%,
+		#fdf497 5%,
+		#fd5949 45%,
+		#d6249f 60%,
+		#285aeb 90%
+	);
 }
 
 .social-header i.fa-linkedin:hover,
 .social-header i.fa-linkedin span,
 .social-header i.fa-linkedin span:before {
-	background: rgb(166,225,255);
-background: linear-gradient(90deg, rgba(166,225,255,1) 0%, rgba(0,155,255,1) 82%);
+	background: rgb(166, 225, 255);
+	background: linear-gradient(
+		90deg,
+		rgba(166, 225, 255, 1) 0%,
+		rgba(0, 155, 255, 1) 82%
+	);
 }
 
 /* ENDDDD Social ANimation */
@@ -1564,7 +1600,7 @@ header > form > button {
 
 .academy .academy-post {
 	display: grid;
-	grid-template-columns: repeat(auto-fit,100%);
+	grid-template-columns: repeat(auto-fit, 100%);
 	justify-content: center;
 }
 
@@ -1713,7 +1749,7 @@ footer p {
 	margin-right: -2rem;
 	margin-bottom: 1rem;
 }
-.footer-social-media{
+.footer-social-media {
 	margin-left: 3rem;
 }
 
@@ -4590,8 +4626,6 @@ table.blueTable thead th:first-child {
 		transform: translate(5px, 39px);
 	}
 
-	
-
 	.video-gallery {
 		padding: 2rem;
 	}
@@ -4610,7 +4644,7 @@ table.blueTable thead th:first-child {
 	.academy .academy-post {
 		padding: 1rem;
 	}
-	.social-header{
+	.social-header {
 		display: none;
 	}
 	.blueTable th {
@@ -4896,11 +4930,11 @@ table.blueTable thead th:first-child {
 	}
 	.academy .academy-post {
 		display: grid;
-		grid-template-columns: repeat(auto-fit,31%);
+		grid-template-columns: repeat(auto-fit, 31%);
 		justify-content: center;
 		column-gap: 1rem;
 	}
-	.social-header{
+	.social-header {
 		display: block;
 		bottom: 20px;
 	}
@@ -5575,7 +5609,7 @@ table.blueTable thead th:first-child {
 	body {
 		background: rgb(187, 137, 153);
 	}
-	.social-header{
+	.social-header {
 		bottom: 82px;
 	}
 

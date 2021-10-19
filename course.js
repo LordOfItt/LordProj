@@ -2,11 +2,6 @@
 const suppBtn = document.querySelector('.course-supp-button'),
 supptText = document.querySelector('.course-supp-add')
 
-
-
-
-
-
 // addEventListeners
 suppBtn.addEventListener('click',(e) => {
         e.preventDefault();

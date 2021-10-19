@@ -27,23 +27,16 @@ document.addEventListener('click', () => {
 
 // logo animation start
 
-const forjsanimate = document.querySelector('#for-js-animate');
+const Lgoforjsanimate = document.querySelectorAll('.for-js-animate');
 
-function test() {
-	let d = 1;
-	if (d == 1) {
-		let animatelogo = setInterval(() => {
-			forjsanimate.classList.add('jsClass_animation_logo');
-		});
-		if (d == 2) {
-			clearInterval(() => {
-				animatelogo;
-			}, 1000);
-		}
-		d++;
-		console.log(d);
-	}
+let setintervalLogo = setInterval(() => {
+	Lgoforjsanimate.forEach((e) => {
+		e.classList.add('jsClass_animation_logo');
+	});
+});
 
-	console.log(d);
-}
-test();
+setInterval(() => {
+	Lgoforjsanimate.forEach((e) => {
+		e.classList.toggle('jsClass_animation_logo2');
+	});
+}, 2000);
