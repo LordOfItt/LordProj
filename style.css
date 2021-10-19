@@ -62,6 +62,8 @@ li {
 	}
 }
 
+/* three_box_animaton_Tarefe_page end */
+
 /* start scroll bar */
 
 ::-webkit-scrollbar {
@@ -121,8 +123,106 @@ li {
 
 /* end scroll bar  */
 
-/* three_box_animaton_Tarefe_page end */
+/* start mouse effect and animation  */
 
+.cursor-effect {
+	width: 30px;
+	height: 30px;
+	border: 2px solid #6b5d5d;
+	border-radius: 50%;
+	position: absolute;
+	background: rgba(85, 84, 84, 0.164);
+	animation: cruseranimate 0.5s infinite alternate;
+}
+
+.cursor-effect::after {
+	content: '';
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	border: 8px solid rgb(146, 76, 76);
+	border-radius: 50%;
+	opacity: 0.5;
+	left: -10px;
+	top: -10px;
+	animation: cruseranimate2 0.5s infinite alternate;
+}
+
+@keyframes cruseranimate {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(0.7);
+	}
+}
+
+@keyframes cruseranimate2 {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(0.4);
+	}
+}
+.clickAnimationMouse {
+	animation: cruseranimate3 0.5s forwards;
+	border: 3px soldi crimson;
+}
+@keyframes cruseranimate3 {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(3);
+	}
+	100% {
+		transform: scale(1);
+		opacity: 0;
+	}
+}
+/* end mouse effect and animation  */
+
+/* logo animation start */
+.midel-parent-logo img {
+	clip-path: polygon(100% 0, 0% 0, 0 100%, 0% 0%);
+
+	/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+.jsClass_animation_logo {
+	animation: LogoAnimate 1s ease-in-out infinite alternate;
+}
+
+.jsClass_animation_logo2 {
+	animation: LogoAnimate2 1s ease-in-out forwards alternate;
+}
+@keyframes LogoAnimate2 {
+	0%,
+	100% {
+		clip-path: polygon(100% 0, 0% 0, 0 100%, 100% 100%);
+	}
+}
+@keyframes LogoAnimate {
+	0% {
+		clip-path: polygon(100% 0, 0% 0, 0 100%, 0% 0%);
+	}
+	25% {
+		clip-path: polygon(100% 0, 0% 0, 0 100%, 25% 25%);
+	}
+	50% {
+		clip-path: polygon(100% 0, 0% 0, 0 100%, 50% 50%);
+	}
+
+	75% {
+		clip-path: polygon(100% 0, 0% 0, 0 100%, 74% 75%);
+	}
+
+	100% {
+		clip-path: polygon(100% 0, 0% 0, 0 100%, 100% 100%);
+	}
+}
+/* logo animation end  */
 /* end all-animation */
 
 @font-face {
