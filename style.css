@@ -250,11 +250,6 @@ li {
 
 /* Lord OF it Animation start  */
 
-.welcome-text div:nth-of-type(1) {
-	color: red;
-	transform: translateX(120px);
-}
-
 /* Lord OF it Animation end */
 
 /* end all-animation */
@@ -918,6 +913,7 @@ header {
 .welcome-text h1 {
 	font-size: 1.5rem;
 }
+
 .welcome-text {
 	color: white;
 	text-align: center;
@@ -946,22 +942,35 @@ header {
 .welcome-text span {
 	color: rgb(0, 183, 255);
 	display: inline-block;
+	text-shadow: 3px 1px 6px rgb(0, 110, 255);
 }
 
 .welcome-text span:nth-of-type(1) {
-	color:red;
 	transform: translate(0px, 0px);
-	animation: span1 1s ease-in-out 0.4s alternate infinite;
+	animation: span1 1s ease-in-out 2.8s alternate infinite;
 }
 .welcome-text span:nth-of-type(2) {
-	color:blue;
 	transform: translate(0px, 0px);
-	animation: span2 1s ease-in-out  3s alternate infinite;
+	animation: span1 1s ease-in-out 2.6s alternate infinite;
 }
 
 .welcome-text span:nth-of-type(3) {
-	transform: translate(0px, 0px);
-	animation: span3 1s ease-in-out 1s alternate infinite;
+	animation: span1 1s ease-in-out 2.4s alternate infinite;
+}
+.welcome-text span:nth-of-type(4) {
+	animation: span1 1s ease-in-out 2s alternate infinite;
+}
+.welcome-text span:nth-of-type(5) {
+	animation: span1 1s ease-in-out 1.8s alternate infinite;
+}
+.welcome-text span:nth-of-type(6) {
+	animation: span1 1s ease-in-out 1.6s alternate infinite;
+}
+.welcome-text span:nth-of-type(7) {
+	animation: span1 1s ease-in-out 1.4s alternate infinite;
+}
+.welcome-text span:nth-of-type(8) {
+	animation: span1 1s ease-in-out 1.2s alternate infinite;
 }
 
 @keyframes span1 {
@@ -969,23 +978,7 @@ header {
 		transform: translate(0px, 0px);
 	}
 	100% {
-		transform: translate(0px, 10px);
-	}
-}
-@keyframes span2 {
-	0% {
-		transform: translate(0px, 0px);
-	}
-	100% {
 		transform: translate(0px, 15px);
-	}
-}
-@keyframes span3 {
-	0% {
-		transform: translate(0px, 0px);
-	}
-	100% {
-		transform: translate(0px, 20px);
 	}
 }
 
@@ -1656,24 +1649,41 @@ header > form > button {
 	grid-template-columns: repeat(auto-fit, 100%);
 	justify-content: center;
 }
-.post-academy-hompage{
-	clip-path: polygon(85% 31%, 60% 100%, 0 100%, 0 45%, 78% 8%, 0 76%, 76% 25%, 28% 100%);
+.post-academy-hompage {
+	clip-path: polygon(
+		85% 31%,
+		60% 100%,
+		0 100%,
+		0 45%,
+		78% 8%,
+		0 76%,
+		76% 25%,
+		28% 100%
+	);
 	transition: all 1.5s ease-in-out;
 }
-.posttransform{
-	clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0, 100% 0, 0 76%, 100% 0, 28% 100%) ;
+.posttransform {
+	clip-path: polygon(
+		100% 0,
+		100% 100%,
+		0 100%,
+		0 0,
+		100% 0,
+		0 76%,
+		100% 0,
+		28% 100%
+	);
 }
 
 .academy-post div {
 	margin-bottom: 2rem;
-	
 }
-.post-academy-hompage{
+.post-academy-hompage {
 	position: relative;
 }
-.post-academy-hompage::before{
-	content: " ";
-  	top: 0;
+.post-academy-hompage::before {
+	content: ' ';
+	top: 0;
 	box-shadow: 9px 15px 15px 10px #111;
 	height: 10px;
 	width: inherit;
@@ -1681,13 +1691,11 @@ header > form > button {
 	z-index: 9999;
 	transition: all 2s ease-in-out;
 }
-.post-new-academy-hompage.post-academy-hompage::before{
+.post-new-academy-hompage.post-academy-hompage::before {
 	height: 300px;
-	box-shadow:none;
+	box-shadow: none;
 	opacity: 0.4;
 }
-
-
 
 .academy-post div figure {
 	display: flex;
@@ -1702,14 +1710,13 @@ header > form > button {
 .academy-post div figure button {
 	cursor: pointer;
 	padding: 14px;
-	border-radius:0 0 0.5rem 0.5rem;
+	border-radius: 0 0 0.5rem 0.5rem;
 	color: #fff;
 	background-color: #28b6cf;
 	text-shadow: 1px 1px 1px rgba(51, 51, 51, 0.37);
 	border: none;
 	width: 100%;
 	font-weight: bold;
-	
 }
 
 /* START FOOTER */
@@ -4572,7 +4579,9 @@ table.blueTable thead th:first-child {
 	body {
 		background-color: white;
 	}
-
+	.welcome-text h1 {
+		font-size: 1rem;
+	}
 	/* start section tarefe */
 	.special-site-parent-tarefe-page {
 		grid-template-columns: repeat(auto-fit, 100%);
