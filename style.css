@@ -371,7 +371,7 @@ header {
 	font: 12px sans-serif;
 	border-radius: 3px;
 	line-height: 24px;
-	left: -80%;
+	left: 0%;
 	margin-top: -16px;
 	opacity: 0;
 	padding: 4px 8px;
@@ -1656,10 +1656,38 @@ header > form > button {
 	grid-template-columns: repeat(auto-fit, 100%);
 	justify-content: center;
 }
+.post-academy-hompage{
+	clip-path: polygon(85% 31%, 60% 100%, 0 100%, 0 45%, 78% 8%, 0 76%, 76% 25%, 28% 100%);
+	transition: all 1.5s ease-in-out;
+}
+.posttransform{
+	clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0, 100% 0, 0 76%, 100% 0, 28% 100%) ;
+}
 
 .academy-post div {
 	margin-bottom: 2rem;
+	
 }
+.post-academy-hompage{
+	position: relative;
+}
+.post-academy-hompage::before{
+	content: " ";
+  	top: 0;
+	box-shadow: 9px 15px 15px 10px #111;
+	height: 10px;
+	width: inherit;
+	position: absolute;
+	z-index: 9999;
+	transition: all 2s ease-in-out;
+}
+.post-new-academy-hompage.post-academy-hompage::before{
+	height: 300px;
+	box-shadow:none;
+	opacity: 0.4;
+}
+
+
 
 .academy-post div figure {
 	display: flex;
@@ -1674,13 +1702,14 @@ header > form > button {
 .academy-post div figure button {
 	cursor: pointer;
 	padding: 14px;
-	border-radius: 0.5rem;
+	border-radius:0 0 0.5rem 0.5rem;
 	color: #fff;
 	background-color: #28b6cf;
 	text-shadow: 1px 1px 1px rgba(51, 51, 51, 0.37);
 	border: none;
 	width: 100%;
 	font-weight: bold;
+	
 }
 
 /* START FOOTER */
