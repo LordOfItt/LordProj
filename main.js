@@ -116,6 +116,20 @@ function animationbars() {
 		}
 	});
 }
+
+// animation academy
+function animationAcademy (){
+	let posts = document.querySelectorAll('.academy-post>div')
+	posts.forEach(post => {
+		let postCoordinates = post.getBoundingClientRect().top;
+		if(postCoordinates < screenPosition){
+			post.classList.add('posttransform')
+			post.classList.add('post-new-academy-hompage')
+		}
+	});
+	
+}
+
 // count numbers
 function animationNumbers() {
 	let SetNum = document.querySelectorAll('.SetNum');
@@ -156,7 +170,7 @@ function animationNumbers() {
 document.addEventListener('scroll', () => {
 	animationNumbers();
 	animationbars();
-
+	animationAcademy ()
 	let sY = window.scrollY;
 
 	// console.log(sY);
@@ -288,3 +302,4 @@ toggle.forEach((e) => {
 		e.classList.toggle('Showtoggle');
 	});
 });
+
