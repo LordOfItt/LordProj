@@ -46,10 +46,10 @@ li {
 	visibility: hidden;
 }
 .showtext .pakage-text-continue p {
-	animation: dnDb_p_animation_tarfe_page 1s ease-in-out 1s forwards alternate;
+	animation: box_p_animation_tarfe_page 1s ease-in-out 1s forwards alternate;
 }
 
-@keyframes dnDb_p_animation_tarfe_page {
+@keyframes box_p_animation_tarfe_page {
 	from {
 		opacity: 0;
 		visibility: hidden;
@@ -86,10 +86,10 @@ li {
 	right: 0px;
 	width: 10px;
 	background: linear-gradient(to top, #008aff, #00ffe7);
-	animation: animate 5s infinite;
+	animation: animate_scorll 5s infinite;
 	z-index: 999;
 }
-@keyframes animate {
+@keyframes animate_scorll {
 	0%,
 	100% {
 		filter: hue-rotate(0deg);
@@ -247,6 +247,16 @@ li {
 	}
 }
 /* logo animation end  */
+
+/* Lord OF it Animation start  */
+
+.welcome-text div:nth-of-type(1) {
+	color: red;
+	transform: translateX(120px);
+}
+
+/* Lord OF it Animation end */
+
 /* end all-animation */
 
 @font-face {
@@ -675,7 +685,6 @@ header {
 }
 
 .parent-sign-up_and_iconbar {
-	border-bottom: 1px solid #fff;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -906,7 +915,9 @@ header {
 .midel-parent-logo img {
 	max-width: 15%;
 }
-
+.welcome-text h1 {
+	font-size: 1.5rem;
+}
 .welcome-text {
 	color: white;
 	text-align: center;
@@ -934,6 +945,48 @@ header {
 
 .welcome-text span {
 	color: rgb(0, 183, 255);
+	display: inline-block;
+}
+
+.welcome-text span:nth-of-type(1) {
+	color:red;
+	transform: translate(0px, 0px);
+	animation: span1 1s ease-in-out 0.4s alternate infinite;
+}
+.welcome-text span:nth-of-type(2) {
+	color:blue;
+	transform: translate(0px, 0px);
+	animation: span2 1s ease-in-out  3s alternate infinite;
+}
+
+.welcome-text span:nth-of-type(3) {
+	transform: translate(0px, 0px);
+	animation: span3 1s ease-in-out 1s alternate infinite;
+}
+
+@keyframes span1 {
+	0% {
+		transform: translate(0px, 0px);
+	}
+	100% {
+		transform: translate(0px, 10px);
+	}
+}
+@keyframes span2 {
+	0% {
+		transform: translate(0px, 0px);
+	}
+	100% {
+		transform: translate(0px, 15px);
+	}
+}
+@keyframes span3 {
+	0% {
+		transform: translate(0px, 0px);
+	}
+	100% {
+		transform: translate(0px, 20px);
+	}
 }
 
 .fixed-arrow-up-parent.Show_ArrowUp {
