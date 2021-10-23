@@ -7,24 +7,6 @@ window.addEventListener('scroll', () => {
 	progressbarScorll.style.height = ProgressHeight + '%';
 });
 
-// mouse move effect
-
-const CursorEffect = document.querySelector('.cursor-effect');
-
-document.addEventListener('mousemove', (e) => {
-	CursorEffect.setAttribute(
-		'style',
-		'top: ' + (e.pageY - 25) + 'px; left:' + (e.pageX - 25) + 'px'
-	);
-});
-
-document.addEventListener('click', () => {
-	CursorEffect.classList.add('clickAnimationMouse');
-	setTimeout(() => {
-		CursorEffect.classList.remove('clickAnimationMouse');
-	}, 500);
-});
-
 // logo animation start
 
 const Lgoforjsanimate = document.querySelectorAll('.for-js-animate');
@@ -35,7 +17,7 @@ let setintervalLogo = setInterval(() => {
 	});
 });
 
-setInterval(() => {
+setTimeout(() => {
 	Lgoforjsanimate.forEach((e) => {
 		e.classList.toggle('jsClass_animation_logo2');
 	});

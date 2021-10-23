@@ -117,17 +117,33 @@ function animationbars() {
 	});
 }
 
+// test
+
+function showMenuSticky() {
+	let footer = document.querySelector('#footer_showMenu');
+	let postionfooter = footer.getBoundingClientRect().top;
+	console.log(postionfooter + 'footer');
+	console.log(screenPosition + 'window');
+	if (postionfooter > screenPosition) {
+		parentresponsivelogotell.classList.remove('sticky');
+		parentMainlogo.classList.remove('fixed_Mainmenu_and_logo');
+	}
+	if (postionfooter < screenPosition) {
+		parentresponsivelogotell.classList.add('sticky');
+		parentMainlogo.classList.add('fixed_Mainmenu_and_logo');
+	}
+}
+
 // animation academy
-function animationAcademy (){
-	let posts = document.querySelectorAll('.academy-post>div')
-	posts.forEach(post => {
+function animationAcademy() {
+	let posts = document.querySelectorAll('.academy-post>div');
+	posts.forEach((post) => {
 		let postCoordinates = post.getBoundingClientRect().top;
-		if(postCoordinates < screenPosition){
-			post.classList.add('posttransform')
-			post.classList.add('post-new-academy-hompage')
+		if (postCoordinates < screenPosition) {
+			post.classList.add('posttransform');
+			post.classList.add('post-new-academy-hompage');
 		}
 	});
-	
 }
 
 // count numbers
@@ -170,19 +186,13 @@ function animationNumbers() {
 document.addEventListener('scroll', () => {
 	animationNumbers();
 	animationbars();
-	animationAcademy ()
+	animationAcademy();
+	showMenuSticky();
+
 	let sY = window.scrollY;
 
 	// console.log(sY);
-	if (sY >= 100) {
-		parentresponsivelogotell.classList.add('sticky');
-		parentMainlogo.classList.add('fixed_Mainmenu_and_logo');
-	}
-	if (sY <= 100) {
-		parentresponsivelogotell.classList.remove('sticky');
 
-		parentMainlogo.classList.remove('fixed_Mainmenu_and_logo');
-	}
 	if (sY >= 500) {
 		Boxes.forEach((allbox) => {
 			allbox.classList.add('animateBoxes');
@@ -201,6 +211,14 @@ document.addEventListener('scroll', () => {
 		parentchat_img.classList.remove('showOnlineChat');
 	}
 });
+
+//  if (contentposition < screenPosition)
+
+//  else {
+// 	// 		parentresponsivelogotell.classList.remove('sticky');
+// 	// 		parentMainlogo.classList.remove('fixed_Mainmenu_and_logo');
+// 	// 	}
+// }
 
 // swiper
 
@@ -302,4 +320,3 @@ toggle.forEach((e) => {
 		e.classList.toggle('Showtoggle');
 	});
 });
-

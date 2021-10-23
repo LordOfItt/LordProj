@@ -123,66 +123,6 @@ li {
 
 /* end scroll bar  */
 
-/* start mouse effect and animation  */
-
-.cursor-effect {
-	width: 30px;
-	height: 30px;
-	border: 2px solid #6b5d5d;
-	border-radius: 50%;
-	position: absolute;
-	background: rgba(85, 84, 84, 0.164);
-	animation: cruseranimate 0.5s infinite alternate;
-}
-
-.cursor-effect::after {
-	content: '';
-	width: 30px;
-	height: 30px;
-	position: absolute;
-	border: 8px solid rgb(146, 76, 76);
-	border-radius: 50%;
-	opacity: 0.5;
-	left: -10px;
-	top: -10px;
-	animation: cruseranimate2 0.5s infinite alternate;
-}
-
-@keyframes cruseranimate {
-	from {
-		transform: scale(1);
-	}
-	to {
-		transform: scale(0.7);
-	}
-}
-
-@keyframes cruseranimate2 {
-	from {
-		transform: scale(1);
-	}
-	to {
-		transform: scale(0.4);
-	}
-}
-.clickAnimationMouse {
-	animation: cruseranimate3 0.5s forwards;
-	border: 3px soldi crimson;
-}
-@keyframes cruseranimate3 {
-	0% {
-		transform: scale(1);
-	}
-	50% {
-		transform: scale(3);
-	}
-	100% {
-		transform: scale(1);
-		opacity: 0;
-	}
-}
-/* end mouse effect and animation  */
-
 /* logo animation start */
 .midel-parent-logo img {
 	clip-path: polygon(100% 0, 0% 0, 0 100%, 0% 0%);
@@ -250,7 +190,83 @@ li {
 
 /* Lord OF it Animation start  */
 
+.welcome-text span:nth-of-type(1) {
+	transform: translate(0px, 0px);
+	animation: animate_text_Lord_of_it 1s ease-in-out 2.8s alternate;
+	animation-iteration-count: 6;
+}
+.welcome-text span:nth-of-type(2) {
+	transform: translate(0px, 0px);
+	animation: animate_text_Lord_of_it 1s ease-in-out 2.6s alternate;
+	animation-iteration-count: 6;
+}
+
+.welcome-text span:nth-of-type(3) {
+	animation: animate_text_Lord_of_it 1s ease-in-out 2.4s alternate;
+	animation-iteration-count: 6;
+}
+.welcome-text span:nth-of-type(4) {
+	animation: animate_text_Lord_of_it 1s ease-in-out 2s alternate;
+	animation-iteration-count: 6;
+}
+.welcome-text span:nth-of-type(5) {
+	animation: animate_text_Lord_of_it 1s ease-in-out 1.8s alternate;
+	animation-iteration-count: 6;
+}
+.welcome-text span:nth-of-type(6) {
+	animation: animate_text_Lord_of_it 1s ease-in-out 1.6s alternate;
+	animation-iteration-count: 6;
+}
+.welcome-text span:nth-of-type(7) {
+	animation: animate_text_Lord_of_it 1s ease-in-out 1.4s alternate;
+	animation-iteration-count: 6;
+}
+.welcome-text span:nth-of-type(8) {
+	animation: animate_text_Lord_of_it 1s ease-in-out 1.2s alternate;
+	animation-iteration-count: 6;
+}
+/* added scroll */
+.fixed_Mainmenu_and_logo .welcome-text {
+	padding: 10px;
+}
+
+@keyframes animate_text_Lord_of_it {
+	0% {
+		transform: translate(0px, 0px);
+	}
+	100% {
+		transform: translate(0px, 15px);
+	}
+}
+
 /* Lord OF it Animation end */
+
+/* icon phone animate STart  */
+
+.animate-phone-big-menu {
+	transform: translate(-15px, 0px);
+
+	animation: animate-phone-big-menu 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes animate-phone-big-menu {
+	0% {
+		transform: translate(-15px, 0px);
+	}
+	100% {
+		color: rgb(199, 104, 104);
+		transform: translate(-13px, 2px);
+	}
+}
+
+/* icon phone animate end  */
+
+/* change-background-menu-animate-start */
+.parent-main-logo-sigin_and_main-menu.fixed_Mainmenu_and_logo {
+	background: #383838;
+}
+
+/* change-background-menu-animate-end  */
 
 /* end all-animation */
 
@@ -466,7 +482,6 @@ header {
 	top: 0px;
 	padding: 5px;
 	z-index: 999;
-	background: rgb(42, 42, 42);
 }
 .parent-main-logo-sigin_and_main-menu {
 	width: 100%;
@@ -943,43 +958,6 @@ header {
 	color: rgb(0, 183, 255);
 	display: inline-block;
 	text-shadow: 3px 1px 6px rgb(0, 110, 255);
-}
-
-.welcome-text span:nth-of-type(1) {
-	transform: translate(0px, 0px);
-	animation: span1 1s ease-in-out 2.8s alternate infinite;
-}
-.welcome-text span:nth-of-type(2) {
-	transform: translate(0px, 0px);
-	animation: span1 1s ease-in-out 2.6s alternate infinite;
-}
-
-.welcome-text span:nth-of-type(3) {
-	animation: span1 1s ease-in-out 2.4s alternate infinite;
-}
-.welcome-text span:nth-of-type(4) {
-	animation: span1 1s ease-in-out 2s alternate infinite;
-}
-.welcome-text span:nth-of-type(5) {
-	animation: span1 1s ease-in-out 1.8s alternate infinite;
-}
-.welcome-text span:nth-of-type(6) {
-	animation: span1 1s ease-in-out 1.6s alternate infinite;
-}
-.welcome-text span:nth-of-type(7) {
-	animation: span1 1s ease-in-out 1.4s alternate infinite;
-}
-.welcome-text span:nth-of-type(8) {
-	animation: span1 1s ease-in-out 1.2s alternate infinite;
-}
-
-@keyframes span1 {
-	0% {
-		transform: translate(0px, 0px);
-	}
-	100% {
-		transform: translate(0px, 15px);
-	}
 }
 
 .fixed-arrow-up-parent.Show_ArrowUp {
