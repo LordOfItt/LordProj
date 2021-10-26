@@ -4,6 +4,26 @@
 	box-sizing: border-box;
 	font-family: vazirL;
 }
+
+/*start all variable for colors and backgrounds */
+:root {
+	--footer-title-btn: #06abbb;
+	--allbtn-pages: #00b8d4;
+	--from-karbar-background: #e5e5e5;
+	--table-tarfe-pag-background: #e5e5e5;
+	--sticky-box-course-page: #e5e5e5;
+	--all-boxes-course-page: #e5e5e5;
+	--all-text-pages: #828282;
+	--text-tarefe: #828282;
+	--menu-color: #383838;
+	--all-panel-karbari-boxes: #f4f2f2;
+	--page-linkEkhtesasi-background: #828282;
+	--responsive-menu-bg: #fff;
+	--zirmenu-responsive-menu-li-a: #195d95;
+	--background-footer: #0c1a24;
+}
+
+/*end  all variable for colors and backgrounds */
 body,
 html {
 	scroll-behavior: smooth;
@@ -158,7 +178,7 @@ li {
 	}
 	100% {
 		clip-path: polygon(100% 0, 0% 0, 0 100%, 100% 100%);
-		transform: translateY(-10px) rotateY(360deg);
+		transform: translateY(10px) rotateY(360deg);
 	}
 }
 
@@ -170,7 +190,7 @@ li {
 	0%,
 	100% {
 		clip-path: polygon(100% 0, 0% 0, 0 100%, 100% 100%);
-		transform: translateY(-10px) rotateY(360deg);
+		transform: translateY(10px) rotateY(360deg);
 	}
 }
 
@@ -183,7 +203,7 @@ li {
 		transform: translateY(0) rotate(0deg);
 	}
 	100% {
-		transform: translateY(100px) rotate(45deg);
+		transform: translateY(15px) rotate(45deg);
 	}
 }
 /* logo animation end  */
@@ -261,12 +281,41 @@ li {
 
 /* icon phone animate end  */
 
-/* change-background-menu-animate-start */
-.parent-main-logo-sigin_and_main-menu.fixed_Mainmenu_and_logo {
-	background: #383838;
+/* animation-workwith-us-four-box start */
+.infomation-box {
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.4s;
+	transform: scale(0);
 }
-
-/* change-background-menu-animate-end  */
+/* .infomation-box.scale_animation {
+	animation: sacalebox 0.4s ease-in-out alternate forwards;
+} */
+.box-box-1.scale_animation {
+	animation: sacalebox 0.5s ease-in-out 0.2s alternate forwards;
+}
+.box-box-2.scale_animation {
+	animation: sacalebox 0.5s ease-in-out 0.3s alternate forwards;
+}
+.box-box-3.scale_animation {
+	animation: sacalebox 0.5s linear 0.3s alternate forwards;
+}
+.box-box-4.scale_animation {
+	animation: sacalebox 0.5s ease-in-out 0.6s alternate forwards;
+}
+@keyframes sacalebox {
+	0% {
+		opacity: 0;
+		visibility: hidden;
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+		visibility: visible;
+	}
+}
+/* animation-workwith-us-four-box end */
 
 /* end all-animation */
 
@@ -357,7 +406,6 @@ header {
 	color: white;
 }
 
-/* here most be d-none */
 .chat-box {
 	display: none;
 }
@@ -373,6 +421,7 @@ header {
 .parent-chat-img img {
 	width: 100%;
 }
+/* social header  */
 .social-header {
 	position: absolute;
 	left: 50px;
@@ -482,9 +531,18 @@ header {
 	top: 0px;
 	padding: 5px;
 	z-index: 999;
+	background: rgb(42, 42, 42);
+
+	/* transform: translateY(-155px); */
 }
 .parent-main-logo-sigin_and_main-menu {
 	width: 100%;
+	/* position: fixed;
+	left: 0px;
+	top: 0px; 
+	z-index: 1;
+	*/
+	background: rgb(44, 44, 44);
 }
 .main-logo-sigin {
 	display: flex;
@@ -1237,8 +1295,6 @@ header > form > button {
 	flex-direction: column;
 	align-items: center;
 }
-
-/* here */
 
 .text-contetn-box h4 {
 	font-size: smaller;
@@ -4554,9 +4610,9 @@ table.blueTable thead th:first-child {
 
 /* mobile */
 @media screen and (max-width: 576px) {
-	body {
+	/* body {
 		background-color: white;
-	}
+	} */
 	.welcome-text h1 {
 		font-size: 1rem;
 	}
@@ -4707,9 +4763,9 @@ table.blueTable thead th:first-child {
 
 /* other */
 @media screen and (min-width: 577px) {
-	body {
+	/* body {
 		background-color: green;
-	}
+	} */
 	.academy .academy-post {
 		padding: 1rem;
 	}
@@ -4994,9 +5050,9 @@ table.blueTable thead th:first-child {
 
 /* tablet */
 @media screen and (min-width: 768px) {
-	body {
+	/* body {
 		background-color: pink;
-	}
+	} */
 	.academy .academy-post {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, 31%);
@@ -5616,9 +5672,9 @@ table.blueTable thead th:first-child {
 
 /* desktop */
 @media screen and (min-width: 900px) {
-	body {
+	/* body {
 		background: rgb(110, 110, 107);
-	}
+	} */
 
 	/* amozesh page start */
 
@@ -5675,9 +5731,9 @@ table.blueTable thead th:first-child {
 }
 /* laptop */
 @media screen and (min-width: 1024px) {
-	body {
+	/* body {
 		background: rgb(187, 137, 153);
-	}
+	} */
 	.social-header {
 		bottom: 82px;
 	}

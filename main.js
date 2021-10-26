@@ -117,23 +117,6 @@ function animationbars() {
 	});
 }
 
-// test
-
-function showMenuSticky() {
-	let footer = document.querySelector('#footer_showMenu');
-	let postionfooter = footer.getBoundingClientRect().top;
-	console.log(postionfooter + 'footer');
-	console.log(screenPosition + 'window');
-	if (postionfooter > screenPosition) {
-		parentresponsivelogotell.classList.remove('sticky');
-		parentMainlogo.classList.remove('fixed_Mainmenu_and_logo');
-	}
-	if (postionfooter < screenPosition) {
-		parentresponsivelogotell.classList.add('sticky');
-		parentMainlogo.classList.add('fixed_Mainmenu_and_logo');
-	}
-}
-
 // animation academy
 function animationAcademy() {
 	let posts = document.querySelectorAll('.academy-post>div');
@@ -187,17 +170,25 @@ document.addEventListener('scroll', () => {
 	animationNumbers();
 	animationbars();
 	animationAcademy();
-	showMenuSticky();
+	// test();
 
 	let sY = window.scrollY;
 
 	// console.log(sY);
-
+	if (sY >= 500) {
+		parentresponsivelogotell.classList.add('sticky');
+		parentMainlogo.classList.add('fixed_Mainmenu_and_logo');
+	}
+	if (sY <= 500) {
+		parentMainlogo.classList.remove('fixed_Mainmenu_and_logo');
+		parentresponsivelogotell.classList.remove('sticky');
+	}
 	if (sY >= 500) {
 		Boxes.forEach((allbox) => {
 			allbox.classList.add('animateBoxes');
 		});
 	}
+
 	if (sY >= 720) {
 		fixed_arrow_upParent.classList.add('Show_ArrowUp');
 	}
@@ -212,20 +203,12 @@ document.addEventListener('scroll', () => {
 	}
 });
 
-//  if (contentposition < screenPosition)
-
-//  else {
-// 	// 		parentresponsivelogotell.classList.remove('sticky');
-// 	// 		parentMainlogo.classList.remove('fixed_Mainmenu_and_logo');
-// 	// 	}
-// }
-
 // swiper
 
 var swiper = new Swiper('.mySwiper', {
 	slidesPerGroup: 1,
-
 	loop: true,
+
 	loopFillGroupWithBlank: true,
 	pagination: {
 		el: '.swiper-pagination',
@@ -320,3 +303,18 @@ toggle.forEach((e) => {
 		e.classList.toggle('Showtoggle');
 	});
 });
+
+// let prevScrollpos = window.pageYOffset;
+// function test() {
+// 	let currentScrollpos = window.pageYOffset;
+
+// 	if (prevScrollpos < currentScrollpos) {
+// 		parentMainlogo.classList.add('fixed_Mainmenu_and_logo');
+// 		// parentresponsivelogotell.classList.add('sticky');
+// 	} else {
+// 		parentMainlogo.classList.remove('fixed_Mainmenu_and_logo');
+// 		// parentresponsivelogotell.classList.remove('sticky');
+// 	}
+
+// 	prevScrollpos = currentScrollpos;
+// }

@@ -62,7 +62,7 @@ toggle.forEach((e) => {
 
 // all scorll event and function
 document.addEventListener('scroll', () => {
-	showMenuSticky();
+	
 	let sY = window.scrollY;
 	if (sY >= 100) {
 		parentresponsivelogotell.classList.add('sticky');
