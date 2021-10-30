@@ -1,14 +1,14 @@
-// const arrowRightCourseBtnsPages = document.querySelector(
-// 	'#arrowRight-course-btns-pages'
-// );
+const arrowRightCourseBtnsPages = document.querySelector(
+	'#arrowRight-course-btns-pages'
+);
 
-// const arrowLeftCourseBtnsPages = document.querySelector(
-// 	'#arrowLeft-course-btns-pages'
-// );
-// let num = 0;
+const arrowLeftCourseBtnsPages = document.querySelector(
+	'#arrowLeft-course-btns-pages'
+);
+//
 
-// chang style btn-numbers , 1 , 2 ...
 const pageItems = document.querySelectorAll('.page-item a');
+
 pageItems.forEach((item) => {
 	item.addEventListener('click', (e) => {
 		document.querySelector('.active').classList.remove('active');
@@ -17,21 +17,43 @@ pageItems.forEach((item) => {
 	});
 });
 
-// console.log(pageItems.length);
-// functions left and right arrow
+// chang style btn-numbers with arrow , 1 , 2 ...
+let numAllbtns = 0;
+const initForbtnspages = (btns) => {
+	pageItems.forEach((allbtn) => {
+		allbtn.classList.remove('active');
+	});
+	pageItems[btns].classList.add('active');
+};
 
-// function nextbtn() {
-// 	if (pageItems.length >= num) {
-// 		num++;
-// 		console.log(num);
-// 	} else {
-// 		num = 0;
-// 	}
-// }
+document.addEventListener('DOMContentLoaded', initForbtnspages(numAllbtns));
 
-// btn
-// arrowRightCourseBtnsPages.addEventListener('click', nextbtn);
+let nextallbtnspages = () => {
+	if (numAllbtns >= pageItems.length - 1) {
+		numAllbtns = 0;
+	} else {
+		numAllbtns++;
+	}
+	for (i = 0; i < pageItems.length; i++) {
+		pageItems[i].classList.remove('active');
+	}
+	initForbtnspages(numAllbtns);
+	pageItems[numAllbtns].classList.add('active');
+};
 
-// arrowLeftCourseBtnsPages.addEventListener('click', () => {
-// 	alert('left_arrow');
-// });
+let prvallbtnspages = () => {
+	if (numAllbtns <= 0) {
+		numAllbtns = pageItems.length - 1;
+	} else {
+		numAllbtns--;
+	}
+	for (i = 0; i < pageItems.length; i++) {
+		pageItems[i].classList.remove('active');
+	}
+	initForbtnspages(numAllbtns);
+	pageItems[numAllbtns].classList.add('active');
+};
+
+arrowLeftCourseBtnsPages.addEventListener('click', prvallbtnspages);
+
+arrowRightCourseBtnsPages.addEventListener('click', nextallbtnspages);
