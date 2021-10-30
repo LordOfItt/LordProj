@@ -26,6 +26,9 @@ let guidancelist = document.querySelector('.guidance-list');
 let guidancelistLis = document.querySelectorAll('.guidance-list li');
 let gudianceNum = document.querySelectorAll('.gudiance-num');
 
+let AllBoxes = document.querySelectorAll('.related-courses-item');
+let PostionBoxes = document.querySelector('.related-courses-content');
+
 document.addEventListener('scroll', () => {
 	allfunctionAnimationRenderHere();
 });
@@ -36,16 +39,21 @@ function animationLI() {
 	});
 }
 
-function gudianceNumBer() {
-	gudianceNum.forEach((e) => {
-		e.classList.add('GuideNumAnimation');
+function Rotatebox() {
+	AllBoxes.forEach((e) => {
+		e.classList.add('rotate-box-course');
 	});
 }
 
 function allfunctionAnimationRenderHere() {
 	let postionGuide = guidancelist.getBoundingClientRect().top;
+	let boxes = PostionBoxes.getBoundingClientRect().top;
+
 	if (postionGuide < windoinerhight) {
 		animationLI();
-		gudianceNumBer();
+	}
+
+	if (boxes < windoinerhight) {
+		Rotatebox();
 	}
 }
