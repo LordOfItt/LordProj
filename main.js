@@ -13,7 +13,6 @@ let IconchatBox = document.querySelector('#icon-chat-box');
 
 let chatBox = document.querySelector('.chat-box');
 // select arrow up
-let fixed_arrow_upParent = document.querySelector('.fixed-arrow-up-parent');
 
 // icon bar select
 let BarIcon = document.querySelector('.fa-bars');
@@ -189,12 +188,12 @@ document.addEventListener('scroll', () => {
 		});
 	}
 
-	if (sY >= 720) {
-		fixed_arrow_upParent.classList.add('Show_ArrowUp');
-	}
-	if (sY <= 720) {
-		fixed_arrow_upParent.classList.remove('Show_ArrowUp');
-	}
+	// if (sY >= 720) {
+	// 	fixed_arrow_upParent.classList.add('Show_ArrowUp');
+	// }
+	// if (sY <= 720) {
+	// 	fixed_arrow_upParent.classList.remove('Show_ArrowUp');
+	// }
 	if (sY >= 800) {
 		parentchat_img.classList.add('showOnlineChat');
 	}
@@ -304,6 +303,7 @@ toggle.forEach((e) => {
 	});
 });
 
+// scorll bar aks code
 // let prevScrollpos = window.pageYOffset;
 // function test() {
 // 	let currentScrollpos = window.pageYOffset;

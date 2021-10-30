@@ -43,7 +43,21 @@ li {
 	list-style-type: none;
 }
 
-/* start all-animation */
+/*------------------------------------------START TEXT SHADOW TITLES PAGES*/
+
+.sections-title,
+.video-gallery h3 ,
+ .academy h3 {
+	text-shadow: 1px 4px 3px #f8faff, 1px 4px 3px rgb(186, 226, 221), 1px 4px 3px rgb(54, 54, 80), 1px 4px 3px skyblue,
+		1px 4px 3px skyblue;
+
+	/* text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit */
+}
+
+
+/*----------------------------------------- END TEXT SHADOW TITLES PAGES*/
+
+/*---------------------------------------------------- START ALL ANIMATION PAGES */
 
 /* three_box_animaton_Tarefe_page start */
 
@@ -96,7 +110,7 @@ li {
 	right: 0px;
 	width: 10px;
 	height: 100%;
-	background: rgba(225, 255, 255, 0.05);
+	background: rgba(61, 61, 61, 0.082);
 	z-index: 999;
 }
 
@@ -105,9 +119,10 @@ li {
 	top: 0px;
 	right: 0px;
 	width: 10px;
-	background: linear-gradient(to top, #008aff, #00ffe7);
+	background: linear-gradient(to top, #506279, #d2deeb);
 	animation: animate_scorll 5s infinite;
 	z-index: 999;
+	border-radius: 5px;
 }
 @keyframes animate_scorll {
 	0%,
@@ -115,7 +130,7 @@ li {
 		filter: hue-rotate(0deg);
 	}
 	50% {
-		filter: hue-rotate(360deg);
+		filter: hue-rotate(40deg);
 	}
 }
 
@@ -126,8 +141,8 @@ li {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(to top, #008aff, #00ffe7);
-	filter: blur(10px);
+	background: linear-gradient(to top, #506279, #d2deeb);
+	filter: blur(5px);
 }
 
 #progressbarScorll::after {
@@ -137,8 +152,9 @@ li {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(to top, #008aff, #00ffe7);
-	filter: blur(30px);
+	background: linear-gradient(to top, #506279, #d2deeb);
+
+	filter: blur(5px);
 }
 
 /* end scroll bar  */
@@ -337,7 +353,6 @@ li {
 	animation: animationGuide_Li 1s ease-in-out 1s forwards alternate;
 }
 
-
 @keyframes animationGuide_Li {
 	0% {
 		transform: scale(0);
@@ -371,7 +386,7 @@ li {
 
 /* end course box animation  */
 
-/* end all-animation */
+/*------------------------------------------------END ALL ANIMATION PAGES */
 
 @font-face {
 	font-family: vazirL;
@@ -3606,7 +3621,7 @@ input[type='number'] {
 }
 .nxt-btn-slide,
 .prev-btn-slide {
-	z-index: 99999;
+	z-index: 999;
 }
 .btn-arrow-amozesh-slides > div {
 	color: rgb(255, 255, 255);
