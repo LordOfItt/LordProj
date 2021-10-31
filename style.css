@@ -593,7 +593,7 @@ header {
 
 /* ENDDDD Social ANimation */
 .parent-main-logo-sigin_and_main-menu.fixed_Mainmenu_and_logo .submenu {
-	top: 160px;
+	/* top: 160px; */
 }
 .parent-main-logo-sigin_and_main-menu.fixed_Mainmenu_and_logo {
 	position: fixed;
@@ -621,7 +621,7 @@ header {
 
 .main-logo-sigin ul {
 	display: flex;
-	margin-top: 2rem;
+	margin-top: 1rem;
 	margin-left: 1rem;
 }
 .ul-sign li a i {
@@ -687,7 +687,7 @@ header {
 .main-menu-first-ul > li {
 	text-align: center;
 	display: inline-block;
-	padding: 1rem 1rem 1.5rem 1rem;
+	padding: 0.3rem 1rem 0.3rem 1rem;
 	font-size: 0.9rem;
 	z-index: 9999;
 }
@@ -729,7 +729,7 @@ header {
 	position: absolute;
 	width: 100%;
 	background-color: rgb(24, 24, 29);
-	top: 129px;
+	/* top: 129px; */
 	right: 0%;
 	transition: all 0.3s ease;
 	z-index: 99;
@@ -798,7 +798,7 @@ header {
 .big-mediaquery-logo img {
 	max-width: 50px;
 	margin-right: clamp(5em, 1rem, 4rem);
-	margin-top: 1rem;
+	/* margin-top: 1rem; */
 }
 
 .big-mediaquery-logo h2 {
@@ -2100,7 +2100,9 @@ input {
 	color: #828282;
 	margin: 50px auto;
 }
-
+.article-linkEkhtesasi{
+	height: calc(100vh - 50px);
+}
 /* Start pageOne */
 .start-register {
 	margin: 0 auto;
@@ -2387,6 +2389,7 @@ input {
 
 .pagetwo {
 	display: none;
+	height:120vh;
 }
 .pagethree {
 	display: none;

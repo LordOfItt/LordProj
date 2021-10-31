@@ -54,6 +54,6 @@ let prvallbtnspages = () => {
 	pageItems[numAllbtns].classList.add('active');
 };
 
-arrowLeftCourseBtnsPages.addEventListener('click', prvallbtnspages);
+arrowLeftCourseBtnsPages.addEventListener('click',nextallbtnspages );
 
-arrowRightCourseBtnsPages.addEventListener('click', nextallbtnspages);
+arrowRightCourseBtnsPages.addEventListener('click', prvallbtnspages);
