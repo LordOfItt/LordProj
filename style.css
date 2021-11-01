@@ -4988,6 +4988,21 @@ table.blueTable thead th:first-child {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+.article-video{
+	margin: 3rem auto;
+	width: 90%;
+	max-height: fit-content;
+	height: 100%;
+}
+.article-video iframe{
+	margin: 0 auto;
+	border: none;
+	width: 100%;
+	height: 15rem;
+	box-shadow: 0px 0px 12px #111;
+    	border-radius: 8px;
+	
+}
 
 .left-article-wrapper {
 	display: none;
@@ -5010,10 +5025,7 @@ table.blueTable thead th:first-child {
 	padding: 10px 15px;
 	background: #f5f5f5;
 }
-.left-article-wrapper {
-	position: sticky;
-	top: 1px;
-}
+
 .article-input-group {
 	width: 100%;
 	display: flex;
@@ -5057,12 +5069,98 @@ table.blueTable thead th:first-child {
 .article-category {
 	margin: 2.5rem 0;
 }
+.article-adds {
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+	border-radius: 3px;
+	position: relative;
+}
+.article-adds-close{
+	position: absolute;
+	top: 12px;
+	right: 11px;
+	cursor: pointer;
+	color: #828282;
+}
+.article-adds-line{
+	width: 22px;
+	height: 2px;
+	background-color: #828282;
 
+}
+.adds-line1{
+	transform: rotate(133deg) translate(1px,-1px);
+}
+.adds-line2{
+	display: none;
+}
+.adds-line3{
+	transform: rotate(-133deg) translate(0px,0px);
+}
+
+
+.hidden-adds .article-adds-close{
+	
+	animation: articleClose 0.3s ease-in-out forwards;
+	
+}
+@keyframes articleClose {
+	0%{
+		opacity: 1;
+	}
+	33%{
+		opacity: 0.5;
+	}
+	66%{
+		opacity: 0.2;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+.hidden-adds .article-content{
+	display: none;
+}
+.hidden-adds h4{
+	display: none;
+}
+.article-adds img{
+	width: 100%;
+}
+.article-content-adds{
+	width: 80%;
+	margin: 0 auto;
+	padding: 0.5rem 0 1.5rem 0;
+	
+}
+.article-content-adds h4.article-content-head{
+	padding: 0.3rem 0 0.7rem 0;
+	border: none;
+	margin-bottom:0;
+	
+}
+.article-img-caption{
+	font-size: 12px;
+	font-weight: bold;
+	color: #828282;
+}
+.article-adds h4 {
+	margin-bottom: 2rem;
+	color: #828282;
+	transform: none;
+	padding: 14px;
+	font-weight: 400;
+	text-align: center;
+	font-weight: bold;
+	border-bottom: 1px solid #828282;
+}
 .article-category-list {
-	margin: 0.3rem 0 2rem 0;
+	margin: 0rem 0 2rem 0;
 	background: #f5f5f5;
 	padding: 0px 10px 10px 10px;
-	line-height: 2rem;
+	line-height: 3rem;
+	font-weight: bold;
+	color: #828282;
+	border-radius: 0 0 10px 10px;
 }
 .article-category-list .fa-chevron-left {
 	font-size: 12px;
@@ -5088,9 +5186,10 @@ table.blueTable thead th:first-child {
 	color: #fff;
 	background-color: #00b8d4;
 	transform: none;
-	padding: 7px;
+	padding: 14px;
 	font-weight: 400;
 	border-radius: 4px;
+	text-align: center;
 }
 /* ----------------------------- RESPONSIVE SCOPE START ----------- */
 
@@ -5558,6 +5657,15 @@ table.blueTable thead th:first-child {
 	/* body {
 		background-color: pink;
 	} */
+	.article-video iframe{
+		margin: 0 auto;
+		border: none;
+		width: 100%;
+		height: 20rem;
+		box-shadow: 0px 0px 12px #111;
+		border-radius: 8px;
+		
+	}
 	.guidance-list-wrapper > p {
 		font-weight: bolder;
 		font-size: 12px;
@@ -5582,6 +5690,7 @@ table.blueTable thead th:first-child {
 		margin: 1rem 0;
 		font-size: 1.2rem;
 	}
+	
 	.article-wrapper-content {
 		display: flex;
 		justify-content: space-between;
