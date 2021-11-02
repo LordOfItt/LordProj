@@ -46,14 +46,13 @@ li {
 /*------------------------------------------START TEXT SHADOW TITLES PAGES*/
 
 .sections-title,
-.video-gallery h3 ,
- .academy h3 {
-	text-shadow: 1px 4px 3px #f8faff, 1px 4px 3px rgb(186, 226, 221), 1px 4px 3px rgb(54, 54, 80), 1px 4px 3px skyblue,
-		1px 4px 3px skyblue;
+.video-gallery h3,
+.academy h3 {
+	text-shadow: 1px 4px 3px #f8faff, 1px 4px 3px rgb(186, 226, 221),
+		1px 4px 3px rgb(54, 54, 80), 1px 4px 3px skyblue, 1px 4px 3px skyblue;
 
 	/* text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit */
 }
-
 
 /*----------------------------------------- END TEXT SHADOW TITLES PAGES*/
 
@@ -97,67 +96,6 @@ li {
 }
 
 /* three_box_animaton_Tarefe_page end */
-
-/* start scroll bar */
-
-::-webkit-scrollbar {
-	width: 0;
-}
-
-#scorllPath {
-	position: fixed;
-	top: 0px;
-	right: 0px;
-	width: 10px;
-	height: 100%;
-	background: rgba(61, 61, 61, 0.082);
-	z-index: 999;
-}
-
-#progressbarScorll {
-	position: fixed;
-	top: 0px;
-	right: 0px;
-	width: 10px;
-	background: linear-gradient(to top, #506279, #d2deeb);
-	animation: animate_scorll 5s infinite;
-	z-index: 999;
-	border-radius: 5px;
-}
-@keyframes animate_scorll {
-	0%,
-	100% {
-		filter: hue-rotate(0deg);
-	}
-	50% {
-		filter: hue-rotate(40deg);
-	}
-}
-
-#progressbarScorll::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(to top, #506279, #d2deeb);
-	filter: blur(5px);
-}
-
-#progressbarScorll::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(to top, #506279, #d2deeb);
-
-	filter: blur(5px);
-}
-
-/* end scroll bar  */
 
 /* logo animation start */
 .midel-parent-logo img {
@@ -372,7 +310,7 @@ li {
 .rotate-box-course {
 	transform: rotateZ(5deg);
 
-	animation: Rotateboxes 1s ease-in-out forwards alternate;
+	animation: Rotateboxes 1s ease-in-out 0.5s forwards alternate;
 }
 
 @keyframes Rotateboxes {
@@ -1109,8 +1047,8 @@ header {
 	padding: 1rem;
 	transition: all 0.3s;
 }
-.fa-arrow-up:hover{
-	background:#04799c;
+.fa-arrow-up:hover {
+	background: #04799c;
 }
 
 header > form {
@@ -1813,7 +1751,7 @@ header > form > button {
 	width: 100%;
 	border-radius: 1px;
 }
-.academy-post div figure a{
+.academy-post div figure a {
 	z-index: 99999;
 }
 
@@ -1830,7 +1768,7 @@ header > form > button {
 	z-index: 9999;
 	transition: all 0.3s;
 }
-.academy-post div figure button:hover{
+.academy-post div figure button:hover {
 	background-color: #04799c;
 }
 
@@ -1910,7 +1848,7 @@ footer p {
 	max-width: 235px;
 	transition: all 0.3s;
 }
-.order-content button:hover{
+.order-content button:hover {
 	background-color: #04799c;
 }
 .order-content .btn1 {
@@ -1997,7 +1935,7 @@ footer p {
 	border: none;
 	transition: all 0.3s;
 }
-.membership form button:hover{
+.membership form button:hover {
 	background-color: #04799c;
 }
 
@@ -2119,7 +2057,7 @@ input {
 	color: #828282;
 	margin: 50px auto;
 }
-.article-linkEkhtesasi{
+.article-linkEkhtesasi {
 	height: calc(100vh - 50px);
 }
 /* Start pageOne */
@@ -2211,7 +2149,7 @@ input {
 	cursor: pointer;
 	transition: all 0.3s;
 }
-.btn:hover{
+.btn:hover {
 	border: 3px solid #04799c;
 	background-color: #04799c;
 	color: #fff;
@@ -2420,7 +2358,7 @@ input {
 
 .pagetwo {
 	display: none;
-	height:120vh;
+	height: 120vh;
 }
 .pagethree {
 	display: none;
@@ -2501,7 +2439,7 @@ h4 {
 	border-radius: 0px 5px 5px 0px;
 	transition: all 0.3s;
 }
-.parent-icon-search:hover{
+.parent-icon-search:hover {
 	background-color: #04799c;
 }
 .parent-icon-search > a > i {
@@ -2517,7 +2455,7 @@ h4 {
 	transform: translate(15px, 0px);
 	transition: all 0.3s;
 }
-.title-category:hover{
+.title-category:hover {
 	background: #04799c;
 }
 .title-category p {
@@ -2541,7 +2479,7 @@ h4 {
 	display: flex;
 	transition: all 0.2s;
 }
-.ul-category > li > a:hover{
+.ul-category > li > a:hover {
 	opacity: 0.8;
 }
 .line-category-li {
@@ -2578,7 +2516,7 @@ h4 {
 	color: rgb(255, 255, 255);
 	transition: all 0.3s;
 }
-.las-line-text_and_btn .bg-img-btn:hover{
+.las-line-text_and_btn .bg-img-btn:hover {
 	background-color: #04799c;
 }
 .las-line-text_and_btn .bg-img-btn a {
@@ -2707,7 +2645,7 @@ h4 {
 	margin-top: 25px;
 	transition: all 0.3s;
 }
-.infomation-box a:hover{
+.infomation-box a:hover {
 	background-color: #04799c;
 }
 .circle-number {
@@ -2871,12 +2809,12 @@ input {
 	font-weight: bold;
 	cursor: pointer;
 }
-.out{
+.out {
 	transition: all 0.3s;
 	background: #f4f2f2;
 }
-.out:hover{
-	background-color:#b8b8b8;
+.out:hover {
+	background-color: #b8b8b8;
 }
 
 .userInfo-Btns .changePassword {
@@ -2884,22 +2822,21 @@ input {
 	color: #fff;
 	transition: all 0.3s;
 }
-.userInfo-Btns .changePassword:hover{
+.userInfo-Btns .changePassword:hover {
 	background-color: #04799c;
 }
-.tips-ul li a{
+.tips-ul li a {
 	transition: all 0.3s;
 }
 
-.tips-ul>li a:hover{
+.tips-ul > li a:hover {
 	color: #04799c;
-	transform: translateX(3px) ;
-	
+	transform: translateX(3px);
 }
-.tips-ul li a i{
+.tips-ul li a i {
 	transition: all 0.3s;
 }
-.tips-ul li:hover a i{
+.tips-ul li:hover a i {
 	color: #04799c;
 }
 .changePassword a {
@@ -3006,7 +2943,7 @@ input {
 	margin: 10px 0;
 	transition: all 0.3s;
 }
-.user-edit-informations button:hover{
+.user-edit-informations button:hover {
 	background: #04799c;
 	border: 3px solid #04799c;
 }
@@ -3076,7 +3013,7 @@ input {
 	max-width: 334px;
 	transition: all 0.3s;
 }
-.changepass button:hover{
+.changepass button:hover {
 	background: #04799c;
 	border: 3px solid #04799c;
 }
@@ -3114,19 +3051,19 @@ input {
 	font-weight: bold;
 	transition: all 0.3s;
 }
-.panel-four-row-more{
+.panel-four-row-more {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	transition: all 0.5s;
 }
-.panel-four-row-more i{
+.panel-four-row-more i {
 	transition: all 0.5s;
 }
-div.panel-four-row-more:hover i{
+div.panel-four-row-more:hover i {
 	transform: rotate(360deg);
 }
-.panel-four-row-more:hover{
+.panel-four-row-more:hover {
 	color: #04799c;
 }
 .panel-four-row-more span {
@@ -3319,7 +3256,7 @@ div.panel-four-row-more:hover i{
 	margin-top: 20px;
 	transition: all 0.3s;
 }
-.sabte-nam button:hover{
+.sabte-nam button:hover {
 	background: #04799c;
 	border: 3px solid #04799c;
 }
@@ -3367,16 +3304,16 @@ div.panel-four-row-more:hover i{
 }
 
 button.google-login-button {
-	background-color: #ffffff  ;
-	color: #c4c4c4 ;
-	border: 1.5px solid #00b8d4 ;
-	font-weight: 300 ;
-	transition:all 0.5s;
+	background-color: #ffffff;
+	color: #c4c4c4;
+	border: 1.5px solid #00b8d4;
+	font-weight: 300;
+	transition: all 0.5s;
 }
-button.google-login-button:hover{
-	background-color: #00b8d4 ;
+button.google-login-button:hover {
+	background-color: #00b8d4;
 	color: #fff;
-	border: 1.5px solid #00b8d4 ;
+	border: 1.5px solid #00b8d4;
 }
 .google-login-button span {
 	font-size: 17px;
@@ -3396,7 +3333,7 @@ button.google-login-button:hover{
 	border-bottom: 1px solid #00b8d4;
 	transition: all 0.3s;
 }
-.second-page .sabte-nam-information > p span a:hover{
+.second-page .sabte-nam-information > p span a:hover {
 	color: #04799c;
 	border-bottom: 1px solid #04799c;
 }
@@ -3479,7 +3416,7 @@ button.google-login-button:hover{
 	width: 80%;
 	transition: all 0.3s;
 }
-.third-page form button:hover{
+.third-page form button:hover {
 	background: #04799c;
 	border: 3px solid #04799c;
 }
@@ -3487,11 +3424,10 @@ button.google-login-button:hover{
 	transition: all 0.3s;
 	color: #00b8d4;
 }
-.btn-link3:hover{
+.btn-link3:hover {
 	color: #04799c;
 }
 
- 
 /*ADD PAGE desktop-51 */
 
 /* Chrome, Safari, Edge, Opera */
@@ -3602,17 +3538,17 @@ input[type='number'] {
 	align-items: center;
 	position: relative;
 }
-.article-bishtar a{
+.article-bishtar a {
 	transition: all 0.3s;
 }
 .article-bishtar a:hover {
 	color: #007688;
 }
-.article-bishtar a i{
+.article-bishtar a i {
 	transition: all 0.5s;
 }
 
-.article-bishtar a:hover i{
+.article-bishtar a:hover i {
 	transform: rotate(360deg);
 }
 
@@ -3719,7 +3655,7 @@ input[type='number'] {
 	display: flex;
 	border-radius: 0px 15px 15px 0px;
 	padding-right: 2rem;
-	font-size:13px;
+	font-size: 13px;
 }
 
 .parent-form > form > input::placeholder {
@@ -3752,7 +3688,6 @@ input[type='number'] {
 	transform: translate(15px, 0px);
 	cursor: pointer;
 }
-
 
 .slides {
 	position: relative;
@@ -4148,12 +4083,13 @@ h3 {
 	width: 100%;
 	justify-content: space-around;
 }
+
 .section-one-tarfe-page ul li {
-	background: #1b7b8a;
+	background: var(--allbtn-pages);
 	border-radius: 10px 10px 0 0;
 	transition: all 0.3s;
 }
-.section-one-tarfe-page ul li:hover{
+.section-one-tarfe-page ul li:hover {
 	background-color: #00b8d4;
 }
 .section-one-tarfe-page ul li a {
@@ -4269,7 +4205,7 @@ h3 {
 	transition: all 0.3s;
 	cursor: pointer;
 }
-.btn-swiper-tarefe:hover{
+.btn-swiper-tarefe:hover {
 	background: #1b7b8a;
 }
 
@@ -4277,6 +4213,7 @@ h3 {
 
 .UX_UI_BOX {
 	box-shadow: inset -5px 0px 50px -3px #7571718c;
+
 	border-radius: 5px;
 	padding: 5px;
 	overflow: hidden;
@@ -4328,7 +4265,7 @@ h3 {
 	transition: all 0.3s;
 	cursor: pointer;
 }
-.ux-ui-boxes:hover{
+.ux-ui-boxes:hover {
 	background: #1b7b8a;
 }
 
@@ -4374,7 +4311,7 @@ h3 {
 }
 .course-bg {
 	background-color: #e5e5e5;
-	margin-top: 1rem;
+	/* margin-top: 1rem; */
 	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
 	border-radius: 10px;
 	padding: 12px;
@@ -4516,7 +4453,9 @@ h3 {
 	flex-direction: column-reverse;
 }
 /* section courseInfo (Course Page) */
-
+.course-Info p {
+	margin: 0px;
+}
 .course-Info-wrapper {
 	line-height: 3rem;
 	width: 100%;
@@ -4536,10 +4475,10 @@ h3 {
 }
 .course-Info-wrapper button {
 	background: #00b8d4;
-	border: 3px solid #00b8d4;
+	border: 1px solid #00b8d4;
 	box-sizing: border-box;
 	border-radius: 12px;
-	padding: 6px 0;
+	padding: 2px 0;
 	color: #fff;
 	font-size: 1em;
 	cursor: pointer;
@@ -4548,8 +4487,8 @@ h3 {
 	margin-bottom: 1rem;
 	transition: all 0.3s;
 }
-.course-Info-wrapper button:hover{
-	background-color:#04799c;
+.course-Info-wrapper button:hover {
+	background-color: #04799c;
 	border: 3px solid #04799c;
 }
 .course-Info-wrapper .additions {
@@ -4649,7 +4588,7 @@ h3 {
 	color: #00b8d4;
 	transition: all 0.3s;
 }
-.guidance-wrapper p span:hover{
+.guidance-wrapper p span:hover {
 	color: #04799c;
 }
 .gudiance-content {
@@ -4766,7 +4705,7 @@ h3 {
 	border-radius: 5px 5px 0 0;
 	transition: all 0.3s;
 }
-.table-btn:hover{
+.table-btn:hover {
 	background-color: #1b7b8a;
 }
 .table-btn a {
@@ -4945,7 +4884,7 @@ table.blueTable thead th:first-child {
 	transition: all 0.3s;
 	cursor: pointer;
 }
-.pakage-btn:hover{
+.pakage-btn:hover {
 	background-color: #1b7b8a;
 }
 /* X */
@@ -4988,20 +4927,19 @@ table.blueTable thead th:first-child {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-.article-video{
+.article-video {
 	margin: 3rem auto;
 	width: 90%;
 	max-height: fit-content;
 	height: 100%;
 }
-.article-video iframe{
+.article-video iframe {
 	margin: 0 auto;
 	border: none;
 	width: 100%;
 	height: 15rem;
 	box-shadow: 0px 0px 12px #111;
-    	border-radius: 8px;
-	
+	border-radius: 8px;
 }
 
 .left-article-wrapper {
@@ -5074,71 +5012,65 @@ table.blueTable thead th:first-child {
 	border-radius: 3px;
 	position: relative;
 }
-.article-adds-close{
+.article-adds-close {
 	position: absolute;
 	top: 12px;
 	right: 11px;
 	cursor: pointer;
 	color: #828282;
 }
-.article-adds-line{
+.article-adds-line {
 	width: 22px;
 	height: 2px;
 	background-color: #828282;
-
 }
-.adds-line1{
-	transform: rotate(133deg) translate(1px,-1px);
+.adds-line1 {
+	transform: rotate(133deg) translate(1px, -1px);
 }
-.adds-line2{
+.adds-line2 {
 	display: none;
 }
-.adds-line3{
-	transform: rotate(-133deg) translate(0px,0px);
+.adds-line3 {
+	transform: rotate(-133deg) translate(0px, 0px);
 }
 
-
-.hidden-adds .article-adds-close{
-	
+.hidden-adds .article-adds-close {
 	animation: articleClose 0.3s ease-in-out forwards;
-	
 }
 @keyframes articleClose {
-	0%{
+	0% {
 		opacity: 1;
 	}
-	33%{
+	33% {
 		opacity: 0.5;
 	}
-	66%{
+	66% {
 		opacity: 0.2;
 	}
-	100%{
+	100% {
 		opacity: 0;
 	}
 }
-.hidden-adds .article-content{
+.hidden-adds .article-content {
 	display: none;
 }
-.hidden-adds h4{
+.hidden-adds h4 {
 	display: none;
 }
-.article-adds img{
+.article-adds img {
 	width: 100%;
 }
-.article-content-adds{
+.article-content-adds {
 	width: 80%;
 	margin: 0 auto;
 	padding: 0.5rem 0 1.5rem 0;
-	
 }
-.article-content-adds h4.article-content-head{
+.article-content-adds h4.article-content-head {
 	padding: 0.3rem 0 0.7rem 0;
 	border: none;
-	margin-bottom:0;
-	
+	margin-bottom: 0;
 }
-.article-img-caption{
+.article-img-caption {
 	font-size: 12px;
 	font-weight: bold;
 	color: #828282;
@@ -5486,7 +5418,7 @@ table.blueTable thead th:first-child {
 	.parent-icon-search {
 		padding: 1rem;
 		display: flex;
-		justify-content:center;
+		justify-content: center;
 		align-items: center;
 		max-height: 40px;
 		transform: translate(-20px, 0px);
@@ -5657,14 +5589,13 @@ table.blueTable thead th:first-child {
 	/* body {
 		background-color: pink;
 	} */
-	.article-video iframe{
+	.article-video iframe {
 		margin: 0 auto;
 		border: none;
 		width: 100%;
 		height: 20rem;
 		box-shadow: 0px 0px 12px #111;
 		border-radius: 8px;
-		
 	}
 	.guidance-list-wrapper > p {
 		font-weight: bolder;
@@ -5690,7 +5621,7 @@ table.blueTable thead th:first-child {
 		margin: 1rem 0;
 		font-size: 1.2rem;
 	}
-	
+
 	.article-wrapper-content {
 		display: flex;
 		justify-content: space-between;
@@ -5734,11 +5665,11 @@ table.blueTable thead th:first-child {
 
 	/* start Tarefe Page  */
 	.box-swiper-tarfe {
-		box-shadow: 0px 2px 13px 7px rgba(16, 131, 255, 0.44);
+		box-shadow: 0px 4px 20px rgb(0 0 0 / 25%);
 	}
 
 	.UX_UI_BOX {
-		box-shadow: 0px 2px 13px 7px rgba(16, 131, 255, 0.44);
+		box-shadow: 0px 4px 20px rgb(0 0 0 / 25%);
 	}
 
 	/* start Tarefe Page  */
@@ -5769,7 +5700,7 @@ table.blueTable thead th:first-child {
 		flex-direction: row;
 		padding: 0.7rem 1.2rem;
 	}
-	
+
 	.panel-four-row img {
 		width: 40%;
 		padding: 1.2rem;
@@ -5784,9 +5715,7 @@ table.blueTable thead th:first-child {
 	.panel-four-row a {
 		width: 10%;
 		align-items: flex-end;
-	
 	}
-	
 
 	.box-swiper-tarfe ul li {
 		font-size: 0.8rem;
@@ -6314,9 +6243,10 @@ table.blueTable thead th:first-child {
 	}
 	.course-Info-wrapper {
 		position: sticky;
-		top: 200px;
+		top: 94px;
 	}
 	.course-content h3 {
+		width: fit-content;
 		text-align: right;
 		padding: 7px;
 		font-size: 24px;
