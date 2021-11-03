@@ -621,11 +621,16 @@ header {
 	width: 100%;
 	border-top: 1px solid #ffffff;
 }
+.main-menu-first-ul svg{
+	height: 14px;
+	width: 17px;
+	vertical-align: -2px;
+}
 
 .main-menu-first-ul > li {
 	text-align: center;
 	display: inline-block;
-	padding: 0.3rem 1rem 0.3rem 1rem;
+	padding: 0.3rem 1rem 0.3rem 0;
 	font-size: 0.9rem;
 	z-index: 9999;
 }
@@ -5015,9 +5020,12 @@ table.blueTable thead th:first-child {
 .article-adds-close {
 	position: absolute;
 	top: 12px;
-	right: 11px;
+	right: 14px;
 	cursor: pointer;
 	color: #828282;
+}
+.article-adds-close i{
+	font-size: 1.2rem;
 }
 .article-adds-line {
 	width: 22px;
@@ -5035,22 +5043,9 @@ table.blueTable thead th:first-child {
 }
 
 .hidden-adds .article-adds-close {
-	animation: articleClose 0.3s ease-in-out forwards;
+	display: none;
 }
-@keyframes articleClose {
-	0% {
-		opacity: 1;
-	}
-	33% {
-		opacity: 0.5;
-	}
-	66% {
-		opacity: 0.2;
-	}
-	100% {
-		opacity: 0;
-	}
-}
+
 .hidden-adds .article-content {
 	display: none;
 }
@@ -5122,6 +5117,76 @@ table.blueTable thead th:first-child {
 	font-weight: 400;
 	border-radius: 4px;
 	text-align: center;
+}
+
+/* Start Page Our Team */
+.ourTeam-title{
+	text-align: center;
+	margin: 4rem 0;
+	color:#828282 ;
+	text-shadow: 1px 4px 3px #f8faff, 1px 4px 3px rgb(186 226 221), 1px 4px 3px rgb(54 54 80), 1px 4px 3px skyblue, 1px 4px 3px skyblue;
+}
+.ourTeamWrapper{
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(48%,1fr));
+	justify-content:center;
+	gap: 3rem;
+	margin: 3rem auto;
+	max-width: 1300px;
+	padding: 0 20px;
+	
+}
+.team-card{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 850px;
+	border-radius: 25px;
+	background: white;
+	box-shadow: 0px 10px 50px rgb(6 171 187 / 30%);  
+	padding: 50px;
+	flex-direction: column;
+}
+.team-card-img figure{
+	border-radius: 20px;
+	
+}
+.team-card-img img{
+	width: 100%;
+	box-shadow: 2px 3px 15px rgb(6 171 187 / 30%);
+	border-radius: 20px;
+	max-width:350px;
+	
+}
+.team-card-img{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.team-card-content{
+  	 width: 100%;
+	   text-align: center;
+	  
+}
+.team-card-content h3{
+	font-size: 1.3rem;
+	color: #333;
+	 margin: 1rem 0 0 0;
+}
+.team-card-content h4{
+	font-size: 0.9rem;
+	color: #7b7992;
+	transform:none;
+	padding:0px;
+	margin-bottom: 1rem;
+}
+.team-card-content p{
+	font-size: 12px;
+	font-weight: bold;
+       text-align: justify;
+	color: #444;
 }
 /* ----------------------------- RESPONSIVE SCOPE START ----------- */
 
@@ -5288,6 +5353,36 @@ table.blueTable thead th:first-child {
 	/* body {
 		background-color: green;
 	} */
+	.team-card{
+		flex-direction: row;
+	}
+	.team-card-content{
+		width: 100%;
+		text-align: right;
+	       
+     }
+     .team-card-content h3{
+	text-align: right;
+	     font-size: 1.7rem;
+	     color: #333;
+	      margin: 0.3rem 0 ;
+     }
+	.team-card-content h4{
+		font-size: 1.1rem;
+		
+	}
+	.team-card-content p{
+		font-size: 14px;
+	}
+	.team-card-img{
+		width: 33%;
+	}
+	
+	.team-card-content{
+		   width: 60%;
+		   text-align: justify;
+		  
+	}
 
 	.guidance-list-wrapper > p {
 		font-weight: bolder;
