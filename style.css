@@ -553,9 +553,43 @@ header {
 }
 .main-logo-sigin {
 	display: flex;
-
 	width: 100%;
 }
+.change-language-wrapper{
+	transform: translate(-60px, 4px);
+}
+.change-language{
+	background-color: #000;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px;
+}
+.change-language span{
+	color: #fff;
+	font-size:13px;
+	font-weight: bold;
+	cursor: pointer;
+	
+}
+.change-language span:nth-of-type(1){
+	width: 45%;
+	margin: 2px 20px 2px 7px;
+}
+.change-language div{
+	width: 43px;
+}
+.change-language span:nth-of-type(2){
+	width: 45%;
+	margin: 2px 7px 2px 20px;
+}
+.change-language-line{
+	background-color: #828282;
+	transform: rotate(90deg);
+	height: 1.5px;
+}
+
 
 .main-logo-sigin ul {
 	display: flex;
@@ -651,7 +685,9 @@ header {
 	display: flex;
 }
 
-.main-menu-two-ul li {
+
+
+.main-menu-two-ul>li {
 	padding: 5px;
 	height: fit-content;
 	position: relative;
@@ -802,6 +838,12 @@ header {
 	background: red;
 	display: none;
 }
+.responsive-menu  svg{
+	vertical-align: -2px;
+	height: 16px;
+	width: 22px;
+}
+
 
 .ShowResponsiveMenu {
 	display: block;
@@ -983,6 +1025,7 @@ header {
 .parent-icon-bar i {
 	color: #06abbb;
 	font-size: 25px;
+	cursor: pointer;
 }
 
 .midel-parent-logo {
@@ -1871,7 +1914,19 @@ footer p {
 .contact-us .edit-p {
 	line-height: 1.3rem;
 }
+.contact-us-ostrolia{
+	direction: ltr;
+}
+.contact-us-ostrolia-wrapper{
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+}
 
+
+.contact-us-ostrolia-wrapper-item2{
+	line-height: 1.5rem;
+}
 .line {
 	height: 3px;
 	width: 100%;
