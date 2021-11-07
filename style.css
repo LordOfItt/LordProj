@@ -2859,6 +2859,7 @@ input {
 	height: 70%;
 	max-width: 491px;
 	object-fit: contain;
+	margin-right: 20px;
 }
 .welcome-panel {
 	text-align: center;
@@ -2926,6 +2927,7 @@ input {
 .Tips .tips-ul > li a {
 	padding: 0px 17px;
 	cursor: pointer;
+	font-size: 0.9rem;
 }
 
 .Tips .tips-ul li i {
@@ -3279,6 +3281,9 @@ div.panel-four-row-more:hover i {
 .job input {
 	width: 79%;
 	margin-top: -8px;
+}
+.m-or-E {
+	margin-top: 20px;
 }
 .m-or-E p,
 .form-password p,
@@ -3918,7 +3923,7 @@ input[type='number'] {
 .wrapper-box-article-amozesh > div > p,
 h3 {
 	text-align: center;
-	color: #828282;
+	color: #fff;
 }
 
 .bishtar {
@@ -4396,7 +4401,7 @@ h3 {
 .course-bg p {
 	color: #414141;
 	margin-bottom: 3px;
-	text-align: justify;
+	font-size: 0.8rem;
 }
 .course-pic {
 	background: none;
@@ -4410,7 +4415,7 @@ h3 {
 .course-bg h2 {
 	margin-bottom: 8px;
 	color: #414141;
-	font-size: 22px;
+	font-size: 20px;
 }
 .course-bg h3 {
 	color: #828282;
@@ -6403,14 +6408,12 @@ table.blueTable thead th:first-child {
 		width: fit-content;
 		text-align: right;
 		padding: 7px;
-		font-size: 24px;
+		font-size: 20px;
 	}
 	.score {
 		margin-bottom: 1rem;
 	}
-	.main-content-wrapper {
-		padding: 1.5% 4rem;
-	}
+
 	/* Courses */
 	.related-courses-content {
 		grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -6424,7 +6427,12 @@ table.blueTable thead th:first-child {
 	} */
 
 	/* amozesh page start */
-
+	.Tips .tips-ul > li a {
+		font-size: 1rem;
+	}
+	.course-bg p {
+		font-size: 1rem;
+	}
 	.parent-form {
 		height: 685px;
 	}
