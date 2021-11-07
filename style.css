@@ -3920,10 +3920,13 @@ input[type='number'] {
 .wrapper-box-article-amozesh > div > h3 {
 	font-size: 0.9rem;
 }
-.wrapper-box-article-amozesh > div > p,
-h3 {
+.wrapper-box-article-amozesh > div > p
+ {
 	text-align: center;
-	color: #fff;
+}
+
+.wrapper-box-article-amozesh > div > h3 {
+	color: #ffff;
 }
 
 .bishtar {
